@@ -1,0 +1,41 @@
+import pandas as pd
+from zabbix_api import ZabbixAPI
+
+# Replace with your Zabbix server URL
+server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
+
+# Replace with your Zabbix API credentials
+username = "Del_Hosts"
+password = "$giga"
+
+# Connect to the Zabbix API
+zapi = ZabbixAPI(server=server_url)
+zapi.login(username, password)
+
+# Function to retrieve inventory for all hosts
+def get_all_host_inventories():
+    hosts = zapi.host.get({"selectInventory": "extend"})
+    return hosts
+
+# Function to convert inventory data to DataFrame
+def inventory_to_dataframe(hosts):
+    inventory_data = []
+    for host in hosts:
+        host_inventory = host.get('inventory', {})
+        host_inventory['hostid'] = host['hostid']
+        host_inventory['host'] = host['host']
+        inventory_data.append(host_inventory)
+    df = pd.DataFrame(inventory_data)
+    return df
+
+# Retrieve all host inventories
+hosts = get_all_host_inventories()
+
+# Convert inventory data to DataFrame
+inventory_df = inventory_to_dataframe(hosts)
+
+# Write DataFrame to Excel
+output_file = r"C:\Scripts\host_inventories.xlsx"
+inventory_df.to_excel(output_file, index=False)
+
+print(f"Host inventories have been successfully written to {output_file}.")

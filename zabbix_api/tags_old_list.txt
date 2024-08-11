@@ -1,0 +1,700 @@
+Host: Zabbix server
+Host ID: 10084
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjbdvnv
+Host ID: 10609
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjansiblezabtest
+Host ID: 10625
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1851
+Host ID: 10629
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1849
+Host ID: 10630
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1750
+Host ID: 10631
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1835
+Host ID: 10632
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1834
+Host ID: 10633
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1879
+Host ID: 10634
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1854
+Host ID: 10635
+Existing Tags: [{'tag': 'Project', 'value': 'LKV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: PDU
+Host ID: 10636
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjitbdnuc
+Host ID: 10638
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv04
+Host ID: 10639
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv03
+Host ID: 10640
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv02
+Host ID: 10641
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv01
+Host ID: 10642
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv06
+Host ID: 10643
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv09
+Host ID: 10644
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv10
+Host ID: 10645
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv12
+Host ID: 10647
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv7
+Host ID: 10648
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv05
+Host ID: 10649
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv08
+Host ID: 10653
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1862
+Host ID: 10654
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1705
+Host ID: 10655
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Mh', 'value': 'EV Board 110', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1782
+Host ID: 10656
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1830
+Host ID: 10657
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1814
+Host ID: 10658
+Existing Tags: [{'tag': 'Project', 'value': 'SV_SmartFlows\\RP', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1755
+Host ID: 10659
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1855
+Host ID: 10660
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Mh', 'value': 'EV Board 110', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1674
+Host ID: 10661
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1706
+Host ID: 10662
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Mh', 'value': 'EV Board 110', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1759
+Host ID: 10663
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1708
+Host ID: 10664
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Mh', 'value': 'EV Board 110', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1687
+Host ID: 10665
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1707
+Host ID: 10667
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Mh', 'value': 'EV Board 110', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1658
+Host ID: 10668
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1659
+Host ID: 10669
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1590
+Host ID: 10670
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1669
+Host ID: 10671
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1783
+Host ID: 10673
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1889
+Host ID: 10675
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1888
+Host ID: 10677
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1890
+Host ID: 10678
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1667
+Host ID: 10679
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1887
+Host ID: 10680
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1891
+Host ID: 10681
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1768
+Host ID: 10682
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1666
+Host ID: 10683
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1557
+Host ID: 10684
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1870
+Host ID: 10685
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1894
+Host ID: 10686
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1863
+Host ID: 10687
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1897
+Host ID: 10688
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'MH', 'value': 'EV Board 187', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1896
+Host ID: 10689
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'MH', 'value': 'EV Board 187', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1898
+Host ID: 10690
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'MH', 'value': 'EV Board 187', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1895
+Host ID: 10691
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'MH', 'value': 'EV Board 187', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjtecrhw
+Host ID: 10692
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1676
+Host ID: 10697
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjcnv11
+Host ID: 10698
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjfwzbxtestroni2
+Host ID: 10700
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1871
+Host ID: 10701
+Existing Tags: [{'tag': 'Project', 'value': 'SV-ACCL', 'automatic': '0'}, {'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjansiblezabtest5
+Host ID: 10702
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjansiblezabtest4
+Host ID: 10703
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjit798
+Host ID: 10704
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjansiblezabtest5_2
+Host ID: 10706
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjf30zabtest
+Host ID: 10707
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2540
+Host ID: 10732
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2695
+Host ID: 10733
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2628
+Host ID: 10734
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2714
+Host ID: 10735
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2625
+Host ID: 10736
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2803
+Host ID: 10737
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2532
+Host ID: 10738
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2225
+Host ID: 10739
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2527
+Host ID: 10740
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2802
+Host ID: 10741
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladhac5
+Host ID: 10742
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2583
+Host ID: 10743
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2741
+Host ID: 10744
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2397
+Host ID: 10745
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2548
+Host ID: 10746
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2640
+Host ID: 10747
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2341
+Host ID: 10748
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2666
+Host ID: 10749
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2569
+Host ID: 10750
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2187
+Host ID: 10751
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2186
+Host ID: 10752
+Existing Tags: [{'tag': 'IDC Mev', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjzabbixc
+Host ID: 10753
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1899
+Host ID: 10754
+Existing Tags: [{'tag': 'Jer MEV', 'value': 'C1 PO', 'automatic': '0'}, {'tag': 'MH', 'value': 'EV Board 187', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladh2588
+Host ID: 10755
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1667_2
+Host ID: 10756
+Existing Tags: []
+--------------------------
+Host: ladj1823
+Host ID: 10757
+Existing Tags: []
+--------------------------
+Host: ladj1882
+Host ID: 10758
+Existing Tags: []
+--------------------------
+Host: ladh2429
+Host ID: 10759
+Existing Tags: []
+--------------------------
+Host: ladj1563
+Host ID: 10760
+Existing Tags: []
+--------------------------
+Host: ladjflowrunner02
+Host ID: 10761
+Existing Tags: []
+--------------------------
+Host: ladj1720
+Host ID: 10762
+Existing Tags: []
+--------------------------
+Host: ladj1767
+Host ID: 10763
+Existing Tags: []
+--------------------------
+Host: ladj1558
+Host ID: 10764
+Existing Tags: []
+--------------------------
+Host: ladj1337
+Host ID: 10765
+Existing Tags: []
+--------------------------
+Host: ladj1665
+Host ID: 10766
+Existing Tags: []
+--------------------------
+Host: ladj1684
+Host ID: 10767
+Existing Tags: []
+--------------------------
+Host: ladj1787
+Host ID: 10768
+Existing Tags: []
+--------------------------
+Host: ladj1874
+Host ID: 10769
+Existing Tags: []
+--------------------------
+Host: ladj1699
+Host ID: 10770
+Existing Tags: []
+--------------------------
+Host: ladj1820
+Host ID: 10771
+Existing Tags: []
+--------------------------
+Host: ladj1653
+Host ID: 10772
+Existing Tags: []
+--------------------------
+Host: ladj1865
+Host ID: 10773
+Existing Tags: []
+--------------------------
+Host: ladj1692
+Host ID: 10774
+Existing Tags: []
+--------------------------
+Host: ladj1664
+Host ID: 10775
+Existing Tags: []
+--------------------------
+Host: sethostname
+Host ID: 10776
+Existing Tags: []
+--------------------------
+Host: ladj1762
+Host ID: 10777
+Existing Tags: []
+--------------------------
+Host: ladj1688
+Host ID: 10778
+Existing Tags: []
+--------------------------
+Host: ladj1649
+Host ID: 10779
+Existing Tags: []
+--------------------------
+Host: ladj832
+Host ID: 10780
+Existing Tags: []
+--------------------------
+Host: ladj1794
+Host ID: 10781
+Existing Tags: []
+--------------------------
+Host: ladj1824
+Host ID: 10782
+Existing Tags: []
+--------------------------
+Host: ladjcnv13
+Host ID: 10783
+Existing Tags: [{'tag': 'Project', 'value': 'CNV', 'automatic': '0'}, {'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladjflowrunnerlogs01
+Host ID: 10784
+Existing Tags: []
+--------------------------
+Host: ladj1657
+Host ID: 10785
+Existing Tags: []
+--------------------------
+Host: ladj1788
+Host ID: 10786
+Existing Tags: []
+--------------------------
+Host: ladj1875
+Host ID: 10787
+Existing Tags: []
+--------------------------
+Host: ladj1722
+Host ID: 10788
+Existing Tags: []
+--------------------------
+Host: ladjenumel
+Host ID: 10789
+Existing Tags: []
+--------------------------
+Host: ladj1873
+Host ID: 10790
+Existing Tags: []
+--------------------------
+Host: ladjflowrunnercmp01
+Host ID: 10791
+Existing Tags: []
+--------------------------
+Host: ladj1886
+Host ID: 10792
+Existing Tags: []
+--------------------------
+Host: ladj1713
+Host ID: 10793
+Existing Tags: []
+--------------------------
+Host: ladj1678
+Host ID: 10794
+Existing Tags: []
+--------------------------
+Host: ladj1764
+Host ID: 10795
+Existing Tags: []
+--------------------------
+Host: ladh2675
+Host ID: 10796
+Existing Tags: []
+--------------------------
+Host: ladj1827
+Host ID: 10797
+Existing Tags: []
+--------------------------
+Host: ladj1712
+Host ID: 10798
+Existing Tags: []
+--------------------------
+Host: ladj1685
+Host ID: 10799
+Existing Tags: []
+--------------------------
+Host: ladj1876
+Host ID: 10800
+Existing Tags: []
+--------------------------
+Host: ladj1553
+Host ID: 10801
+Existing Tags: []
+--------------------------
+Host: ladjscale05
+Host ID: 10802
+Existing Tags: []
+--------------------------
+Host: ladj1711
+Host ID: 10803
+Existing Tags: []
+--------------------------
+Host: ladj1859
+Host ID: 10804
+Existing Tags: []
+--------------------------
+Host: ladj1792
+Host ID: 10805
+Existing Tags: []
+--------------------------
+Host: ladj1600
+Host ID: 10806
+Existing Tags: []
+--------------------------
+Host: ladj1683
+Host ID: 10807
+Existing Tags: []
+--------------------------
+Host: ladj1651
+Host ID: 10808
+Existing Tags: []
+--------------------------
+Host: ladj1796
+Host ID: 10809
+Existing Tags: []
+--------------------------
+Host: ladj1721
+Host ID: 10810
+Existing Tags: []
+--------------------------
+Host: ladj1670
+Host ID: 10811
+Existing Tags: []
+--------------------------
+Host: ladj1723
+Host ID: 10812
+Existing Tags: []
+--------------------------
+Host: ladj1671
+Host ID: 10813
+Existing Tags: []
+--------------------------
+Host: ladj1589
+Host ID: 10814
+Existing Tags: []
+--------------------------
+Host: ladj1601
+Host ID: 10815
+Existing Tags: []
+--------------------------
+Host: ladjsvexe01
+Host ID: 10816
+Existing Tags: []
+--------------------------
+Host: ladj1327
+Host ID: 10817
+Existing Tags: []
+--------------------------
+Host: ladj1780
+Host ID: 10818
+Existing Tags: []
+--------------------------
+Host: ladj1714
+Host ID: 10819
+Existing Tags: []
+--------------------------
+Host: ladjdebugyakov01
+Host ID: 10820
+Existing Tags: []
+--------------------------
+Host: ladj1795
+Host ID: 10821
+Existing Tags: []
+--------------------------
+Host: ladj1779
+Host ID: 10822
+Existing Tags: []
+--------------------------
+Host: ladj1691
+Host ID: 10823
+Existing Tags: []
+--------------------------
+Host: ladj1828
+Host ID: 10824
+Existing Tags: []
+--------------------------
+Host: ladj1273
+Host ID: 10825
+Existing Tags: []
+--------------------------
+Host: ladjkern02
+Host ID: 10826
+Existing Tags: []
+--------------------------
+Host: ladh2182
+Host ID: 10827
+Existing Tags: []
+--------------------------
+Host: ladj1765
+Host ID: 10828
+Existing Tags: []
+--------------------------
+Host: ladj1872
+Host ID: 10829
+Existing Tags: []
+--------------------------
+Host: ladj1791
+Host ID: 10830
+Existing Tags: []
+--------------------------
+Host: ladj770
+Host ID: 10831
+Existing Tags: []
+--------------------------
+Host: ladj1679
+Host ID: 10832
+Existing Tags: []
+--------------------------
+Host: ladj1881
+Host ID: 10833
+Existing Tags: []
+--------------------------
+Host: ladjncsiws01
+Host ID: 10834
+Existing Tags: []
+--------------------------
+Host: ladjorelzab2
+Host ID: 10835
+Existing Tags: [{'tag': 'Project', 'value': 'Pilot', 'automatic': '0'}]
+--------------------------
+Host: ladj1860
+Host ID: 10837
+Existing Tags: []
+--------------------------
+Host: ladj1858
+Host ID: 10838
+Existing Tags: []
+--------------------------
+Host: ladj1697
+Host ID: 10839
+Existing Tags: []
+--------------------------
+Host: ladj1822
+Host ID: 10840
+Existing Tags: []
+--------------------------
