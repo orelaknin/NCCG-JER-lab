@@ -9,7 +9,7 @@ username = "Del_Hosts"
 password = "$giga"
 
 # Path to the Excel file containing host inventory
-excel_file = r"C:\Scripts\HA_FRC.xlsx"
+excel_file = r"C:\Scripts\HA_ZAB.xlsx"
 
 
 # Connect to the Zabbix API
@@ -52,20 +52,39 @@ def update_host_inventory(host_name, inventory_data):
         print(f"No valid inventory data found for host {host_name}. Skipping update.")
 
 
-# Read host inventory from Excel file
-inventory_df = pd.read_excel(excel_file)
+# Read all sheets from the Excel file
+excel = pd.ExcelFile(excel_file)
 
-# Iterate over each row in the DataFrame
-for index, row in inventory_df.iterrows():
-    host_name = row['system name']  # Assuming 'Host' is the column containing host names
-    # Construct inventory data
-    inventory_data = {
-        "software_app_e": row['Group type'],  # Replace 'Tag1' with the appropriate column name
-        "alias": row['NUC'],  # Replace 'Tag2' with the appropriate column name
-	"hardware": row['PowerPDU IP'],
-	"software_app_a": row['PDU Port'],
-	"name": row['Assign to'],
-	"contract_number": row['LP Host'],
-        # Add more tags as needed
-    }
-    update_host_inventory(host_name, inventory_data)
+# Iterate over each sheet in the Excel file
+for sheet_name in excel.sheet_names:
+    print(f"Processing sheet: {sheet_name}")
+    
+    # Read the current sheet
+    inventory_df = pd.read_excel(excel, sheet_name=sheet_name)
+    
+    # Iterate over each row in the DataFrame
+    for index, row in inventory_df.iterrows():
+        host_name = row['system name']  # Assuming 'system name' is the column containing host names
+        
+        # Skip rows where host name is empty
+        if pd.isna(host_name) or host_name == '':
+            print(f"Skipping row {index + 2} due to empty host name.")
+            continue
+
+        # Construct inventory data
+        inventory_data = {
+            "software_app_e": row['Group type'],
+            "alias": row['NUC'],
+            "hardware": row['PowerPDU IP'],
+            "software_app_a": row['PDU Port'],
+            "name": row['Assign to'],
+            "contract_number": row['LP Host'],
+            "location": row['location'],
+            # Add more tags as needed
+        }
+        
+        update_host_inventory(host_name, inventory_data)
+
+    print(f"Finished processing sheet: {sheet_name}")
+
+print("All sheets processed.")
