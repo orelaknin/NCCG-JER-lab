@@ -1,6 +1,6 @@
-import ipaddress
 from zabbix_api import ZabbixAPI
-from datetime import datetime
+import ipaddress
+import re
 
 # Replace with your Zabbix server URL
 server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
@@ -13,29 +13,66 @@ password = "$giga"
 zapi = ZabbixAPI(server=server_url)
 zapi.login(username, password)
 
+def get_discovery_rules():
+    # Fetch all discovery rules
+    discovery_rules = zapi.drule.get({
+        "output": ["druleid", "name", "iprange"],
+        "selectDChecks": ["type", "key_", "ports"],
+        "filter": {"status": [0, 1]}
+    })
+    
+    vlan_ranges = []
+    for rule in discovery_rules:
+        vlan_ranges.append({
+            "name": rule["name"],
+            "range": rule["iprange"]
+        })
+    return vlan_ranges
 
-def get_vlan_group(ip_address):
+def get_vlan_group(ip_address, vlan_ranges):
+    ip_addr = ipaddress.ip_address(ip_address)
     for vlan in vlan_ranges:
-        try:
-            # Try to create an IP network object
-            network = ipaddress.ip_network(vlan["range"], strict=False)
-            if ipaddress.ip_address(ip_address) in network:
-                return vlan["name"]
-        except ValueError:
-            # If it's not a valid network, try as an IP range
-            start, end = vlan["range"].split('-')
-            start_ip = ipaddress.ip_address(start.strip())
-            end_ip = ipaddress.ip_address(end.strip())
-            if start_ip <= ipaddress.ip_address(ip_address) <= end_ip:
-                return vlan["name"]
+        for ip_range in vlan["range"].split(','):
+            ip_range = ip_range.strip()
+            try:
+                if '-' in ip_range:
+                    # Handle IP range (e.g., "10.12.236.4-254")
+                    start, end = ip_range.split('-')
+                    start_ip = ipaddress.ip_address(start.strip())
+                    
+                    # Handle the shorthand notation for the end IP
+                    if '.' not in end:
+                        # If end doesn't contain dots, it's just the last octet
+                        end_ip = ipaddress.ip_address(start_ip.packed[:3] + bytes([int(end)]))
+                    else:
+                        end_ip = ipaddress.ip_address(end.strip())
+                    
+                    if start_ip <= ip_addr <= end_ip:
+                        return vlan["name"]
+                elif '/' in ip_range:
+                    # Handle CIDR notation (e.g., "10.12.172.4/23")
+                    network = ipaddress.ip_network(ip_range, strict=False)
+                    if ip_addr in network:
+                        return vlan["name"]
+                else:
+                    # Handle single IP
+                    if ip_addr == ipaddress.ip_address(ip_range):
+                        return vlan["name"]
+            except ValueError as e:
+                print(f"Warning: Could not parse IP range {ip_range} in VLAN {vlan['name']}: {e}")
+                continue
     return None
 
-# Update your vlan_ranges to use either CIDR notation or IP ranges
-vlan_ranges = [
-    {"name": "FW Lab 112", "range": "10.12.112.4/23"},
-    {"name": "Tech Room 236", "range": "10.12.236.4/24"},
-    # Add more VLAN ranges as needed
-]
+# Add this function to print out the discovery rules for debugging
+#def print_discovery_rules(vlan_ranges):
+    print("Discovery Rules:")
+    for vlan in vlan_ranges:
+        print(f"Name: {vlan['name']}, Range: {vlan['range']}")
+    print()
+
+# In your main script, after fetching the discovery rules:
+vlan_ranges = get_discovery_rules()
+#print_discovery_rules(vlan_ranges)
 
 def update_host_groups(host_id, new_group_name):
     # Get all groups
@@ -52,8 +89,8 @@ def update_host_groups(host_id, new_group_name):
     # Get current host groups
     host_groups = zapi.hostgroup.get({"hostids": host_id, "output": ["groupid", "name"]})
     
-    # Filter out VLAN groups
-    non_vlan_groups = [group for group in host_groups if not any(vlan["name"] in group["name"] for vlan in vlan_ranges)]
+    # Filter out VLAN groups (assuming VLAN groups are the same as discovery rule names)
+    non_vlan_groups = [group for group in host_groups if group["name"] not in [vlan["name"] for vlan in vlan_ranges]]
     
     # Add the new VLAN group
     updated_groups = non_vlan_groups + [{"groupid": new_group_id}]
@@ -64,8 +101,15 @@ def update_host_groups(host_id, new_group_name):
         "groups": updated_groups
     })
 
-# Get all hosts
-hosts = zapi.host.get({"filter": {"host": "ladjoreltech"}, "output": ["hostid", "host"], "selectInterfaces": ["ip"]})
+# Get discovery rules and their IP ranges
+vlan_ranges = get_discovery_rules()
+
+
+# Get specific host (for testing)
+hosts = zapi.host.get({
+    "output": ["hostid", "host"],
+    "selectInterfaces": ["ip"]
+})
 
 for host in hosts:
     host_id = host["hostid"]
@@ -76,7 +120,7 @@ for host in hosts:
         ip_address = host["interfaces"][0]["ip"]
         
         # Determine the VLAN group
-        vlan_group = get_vlan_group(ip_address)
+        vlan_group = get_vlan_group(ip_address, vlan_ranges)
         
         if vlan_group:
             print(f"Updating {host_name} ({ip_address}) to group {vlan_group}")
