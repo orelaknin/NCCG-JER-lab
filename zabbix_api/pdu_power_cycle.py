@@ -75,12 +75,12 @@ def main(hostname):
         
         # Get host ID
         host_id = get_host_id(zapi, hostname)
-        print(f"Host ID for '{hostname}': {host_id}")
+        # print(f"Host ID for '{hostname}': {host_id}")
         
         # Get script ID for "new PDU host power cycle"
-        script_name = "new PDU host power cycle"
+        script_name = "PDU host power cycle"
         script_id = get_script_id(zapi, script_name)
-        print(f"Script ID for '{script_name}': {script_id}")
+        # print(f"Script ID for '{script_name}': {script_id}")
         
         # Execute the script on the host
         result = execute_script(zapi, host_id, script_id)
@@ -91,7 +91,7 @@ def main(hostname):
         zapi.logout()
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Execute "new PDU host power cycle" script on a given host.')
+    parser = argparse.ArgumentParser(description='Execute "PDU host power cycle" script on a given host.')
     parser.add_argument('hostname', type=str, help='The hostname of the target machine')
     args = parser.parse_args()
     
