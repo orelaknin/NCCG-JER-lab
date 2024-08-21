@@ -47,15 +47,19 @@ def update_host_inventory_and_tags(host_name, inventory_data, tag_column, tag_va
 
         # Add tag if it's not empty
         if not pd.isna(tag_value) and tag_value != '':
-            update_data["tags"] = [
-                {
-                    "tag": tag_column,
-                    "value": str(tag_value)
-                }
-            ]
-
-        # Update host
-        zapi.host.update(update_data)
+            existing_tags = zapi.host.get({"hostids": host_id, "selectTags": "extend"})
+            existing_tags = existing_tags[0]["tags"]
+            print("1Existing tags:", existing_tags)
+            # Remove "automatic" parameter from existing tags (if present)
+            existing_tags = [{k: v for k, v in tag.items() if k != "automatic"} for tag in existing_tags]
+            new_tag = {"tag": tag_column, "value": str(tag_value)}
+            print("new tags:", new_tag)
+            if new_tag not in existing_tags:
+                existing_tags.append(new_tag)
+            
+            print("Existing tags:", existing_tags)
+            # Update host
+            zapi.host.update({"hostid": host_id, "tags": existing_tags})
 
         print(f"Successfully updated inventory and tags for host {host_name}.")
     else:
