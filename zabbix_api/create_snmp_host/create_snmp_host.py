@@ -4,7 +4,7 @@ from pysnmp.hlapi import *
 
 # Zabbix server details
 server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
-username = "Del_Hosts"
+username = "create"
 password = "$giga"
 snmp_community = "NCCGRR"
 group_id = "34"  # Adjust this to the appropriate group ID

@@ -6,7 +6,7 @@ from datetime import datetime
 server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
 
 # Replace with your Zabbix API credentials
-username = "Del_Hosts"
+username = "backup"
 password = "$giga"
 
 # Connect to the Zabbix API
