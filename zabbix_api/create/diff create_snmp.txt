@@ -1,0 +1,31 @@
+1. SNMP Vendor Detection:
+old Script: The first script does not include SNMP-based vendor detection. It only creates hosts based on the given IPs and uses a fixed SNMP template.
+current Script: The second script performs an SNMP GET operation using the pysnmp library to detect the vendor of the PDU based on a specific OID (1.3.6.1.2.1.1.1.0). The vendor detection determines which template should be applied to the host in Zabbix.
+
+2. Dynamic Template Assignment:
+old Script: Uses fixed template IDs (10563 and 11232) for all hosts regardless of the device type.
+current Script: Dynamically assigns a template based on the PDU vendor (e.g., Aten, Raritan, Eaton) after detecting the vendor via SNMP. Each vendor is mapped to a specific template ID. If the vendor is not recognized, it skips the host creation.
+
+3. SNMP Functionality:
+old Script: No direct SNMP querying is performed; it only configures the SNMP interface for the host in Zabbix.
+current Script: Implements an SNMP GET operation via pysnmp to fetch the PDU’s vendor information and uses this data for template selection.
+
+4. Host Existence Check:
+old Script: Assumes that hosts are always new and does not check if they already exist in Zabbix before attempting to create them.
+current Script: Checks if the host already exists in Zabbix (by its DNS name) before attempting to create it, avoiding duplicate host creation.
+
+5. Error Handling and Logging:
+old Script: Contains basic error handling mostly around unreachable hosts and issues with host creation in Zabbix.
+current Script: Incorporates additional error handling specific to SNMP operations, and it handles cases where the PDU vendor is unrecognized.
+
+6. Flow of Operations:
+old Script: Simple flow: Ping → Get Hostname → Create Host in Zabbix.
+current Script: Enhanced flow: Ping → Get Hostname → SNMP Query for Vendor → Determine Template → Create Host in Zabbix (with extra checks).
+
+7. Extra Library Requirement:
+old Script: Uses standard libraries and zabbix_api.
+current Script: Requires the additional pysnmp library for SNMP operations.
+
+8. Template Selection Logic:
+old Script: Fixed templates for all hosts.
+current Script: Templates vary depending on the detected PDU vendor, making it more versatile and tailored to the devices being added.
