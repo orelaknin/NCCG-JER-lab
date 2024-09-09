@@ -54,7 +54,6 @@ def update_host(host_id, original_hostname):
     # Add new "Group" tags
     new_tags = [
         {"tag": "Group", "value": "Maintenance"},
-        {"tag": "Group", "value": "no data"}
     ]
     existing_tags.extend(new_tags)
     
@@ -106,11 +105,12 @@ def resolve_triggers(host_id):
     triggers = zapi.trigger.get({
         "hostids": host_id,
         "selectTags": "extend",
-        "tags": [{"tag": "action", "value": "maintenance"}],
         "output": ["triggerid", "description", "value"]
     })
 
     for trigger in triggers:
+        if any( tag["tag"] == "maintenance" and tag["value"] == "keep" for tag in trigger["tags"] ):
+            continue
         if trigger["value"] == "1":  # If the trigger is in PROBLEM state
             zapi.event.acknowledge({
                 "eventids": zapi.trigger.get({
