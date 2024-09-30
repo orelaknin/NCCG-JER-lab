@@ -78,9 +78,8 @@ def update_host_inventory_and_tags(host_name, row, tag_column, tag_value):
             existing_tags = zapi.host.get({"hostids": host_id, "selectTags": "extend"})
             existing_tags = existing_tags[0]["tags"]
             # Remove "automatic" parameter from existing tags (if present)
-            existing_tags = [{k: v for k, v in tag.items() if k != "automatic"} for tag in existing_tags]
+            existing_tags = [{k: v for k, v in tag.items() if k != "automatic" and k != tag_tag} for tag in existing_tags]
             new_tag = {"tag": tag_tag, "value": str(tag_value)}
-            print("new tags:", new_tag)
             if new_tag not in existing_tags:
                 existing_tags.append(new_tag)
             

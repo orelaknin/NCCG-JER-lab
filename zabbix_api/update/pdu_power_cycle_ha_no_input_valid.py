@@ -7,11 +7,10 @@ import asyncio
 import logging
 import sys
 import os
-import re
 
 
 
-#sys.stderr = open(os.devnull, 'w')
+sys.stderr = open(os.devnull, 'w')
 
 
 haifa_script_path = "/home/laduser/haifa_script_altuscn/haifa_altuscn.py"
@@ -63,45 +62,11 @@ def snmp_set(community, target, oid, value, change_snmp_ver=False):
 
 def create_parser():
 
-    # Function to validate the IP address
-    def valid_ip(ip_str):
-        pattern = re.compile(r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
-        
-        if "lab" in ip_str or "ttm" in ip_str:
-            return str(ip_str)
-        
-        if not pattern.match(ip_str):
-            print(f"Invalid IP address or Wrong TTM name {ip_str}")
-            sys.exit(1)
-        # Check that each part of the IP address is within the range 0-255
-        parts = ip_str.split('.')
-        for part in parts:
-            if int(part) < 0 or int(part) > 255:
-                print(f"IP address part out of range: {part}")
-                sys.exit(1)
-        return str(ip_str)
+    parser = argparse.ArgumentParser("new_pdu_script.py")
 
-    # Function to validate outlet number (1-16)
-    def valid_outlet(outlet_str):
-        outlet = int(outlet_str)
-        if outlet < 1 or outlet > 16:
-            print(f"Outlet must be a number between 1 and 16: {outlet_str}")
-            sys.exit(1)
-        return str(outlet)
-
-    # Function to validate action number (0-2)
-    def valid_action(action_str):
-        action = int(action_str)
-        if action < 0 or action > 2:
-            print(f"Action must be a number between 0 and 2: {action_str}")
-            sys.exit(1)
-        return str(action)
-
-    parser = argparse.ArgumentParser("pdu_power_cycle_ha.py")
-
-    parser.add_argument("-i", "--ip", type=valid_ip, help="ip address", required=True)
-    parser.add_argument("-o", "--outlet", type=valid_outlet, help="optional flag for remote json file", required=True)
-    parser.add_argument("-a", "--action", type=valid_action, help="action to perform (on, off, cycle)", required=True)
+    parser.add_argument("-i", "--ip", help="ip address", required=True)
+    parser.add_argument("-o", "--outlet", help="optional flag for remote json file", required=True)
+    parser.add_argument("-a", "--action", help="action to perform (on, off, cycle)", required=True)
 
     return parser
 
@@ -193,8 +158,8 @@ async def check_if_aten(ip):
     for model in generic_model:
         if model in status:
             return "Aten"
-        
-    return "not_rec_pdu"
+        else:
+            return "not_rec_pdu"
         
 
 async def check_if_eaton(ip):
@@ -282,7 +247,7 @@ def run_on_aten_pdu(ip, port, action):
     # SNMP community and target settings
     write_community = 'NCCGWW'
     target = ip  # Replace with your PDU's IP address
-    
+
     # OID for the PDU outlet status
     oid = f"1.3.6.1.4.1.21317.1.3.2.2.2.2.{int(port) + 1}.0"
 

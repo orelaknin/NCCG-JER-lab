@@ -1,7 +1,7 @@
 from zabbix_api import ZabbixAPI
 
 # Connect to the Zabbix API
-zapi = ZabbixAPI(server="http://ladjzabbixc.jer.intel.com/zabbix/")
+zapi = ZabbixAPI(server="http://ladjzabbixc.jer.intel.com/zabbix")
 zapi.login("Del_Hosts", "$giga")
 
 print("--------------------------")
