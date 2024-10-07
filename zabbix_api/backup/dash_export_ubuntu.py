@@ -132,51 +132,23 @@ def export_to_excel(data, base_folder):
     
     df = pd.DataFrame(data)
     df.to_excel(full_path, index=False)
-    print(f"Data exported to {full_path}")
     return full_path
-
-    max_attempts = 5
-    delay = 2  # seconds
-
-    for attempt in range(max_attempts):
-        try:
-            # The file is already in the correct daily folder, so we don't need to create it again
-            destination = local_file  # The file is already in the correct location
-
-            # Attempt to open and close the file to ensure it's not locked
-            with open(local_file, 'rb'):
-                pass
-
-            # If we can open the file, it's safe to proceed with the copy
-            print(f"File {local_file} is ready for access.")
-            
-            # No need to copy the file as it's already in the correct location
-            print(f"File is already in the correct location: {destination}")
-            return
-
-        except PermissionError:
-            if attempt < max_attempts - 1:
-                print(f"File is still in use. Retrying in {delay} seconds... (Attempt {attempt + 1}/{max_attempts})")
-                time.sleep(delay)
-            else:
-                print(f"Failed to access file after {max_attempts} attempts.")
-        except Exception as e:
-            print(f"Error accessing file: {e}")
-            return
 
 def main():
     url = "http://ladjzabbixc.jer.intel.com/zabbix/"
     username = "backup"
     password = "$giga"
     
-    # Hardcoded fileshare path (replace with your actual path)
-    fileshare_base_path = r"\\ladjitfstech.ger.corp.intel.com\Zabbix Excels"
+    # Use the local mount point instead of the Windows UNC path
+    local_mount_point = "/mnt/zabbix_excels"
     
     zapi = zabbix_login(url, username, password)
     if zapi:
         data = get_top_hosts_data(zapi)
         if data:
-            export_to_excel(data, fileshare_base_path)
+            local_file = export_to_excel(data, local_mount_point)
+            if local_file:
+                print(f"File saved successfully: {local_file}")
         zapi.logout()
 
 if __name__ == "__main__":
