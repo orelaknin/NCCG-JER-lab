@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import threading
 import tempfile
 import uuid
@@ -12,8 +13,10 @@ from werkzeug.utils import secure_filename
 
 try:
     from .workbook_service import ProcessingConfig, load_excel_columns, process_excel
+    from .path_utils import connect_to_share, normalize_datasheet_path
 except ImportError:
     from workbook_service import ProcessingConfig, load_excel_columns, process_excel
+    from path_utils import connect_to_share, normalize_datasheet_path
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -190,6 +193,42 @@ def process():
     return redirect(url_for("job_page", job_id=job_id))
 
 
+@app.post("/api/check-share")
+def api_check_share():
+    payload = request.get_json(silent=True) or {}
+
+    network_root = str(payload.get("network_root", "") or "").strip()
+    username = str(payload.get("username", "") or "").strip()
+    password = str(payload.get("password", "") or "").strip()
+    domain = str(payload.get("domain", "") or "").strip()
+    drive_letter = str(payload.get("drive_letter", "") or "").strip()
+    sample_path = str(payload.get("sample_path", "") or "").strip()
+
+    if not network_root:
+        return jsonify({"ok": False, "message": "Enter a network UNC root first (example: \\\\server\\share)."}), 400
+
+    ok, message = connect_to_share(network_root, username=username, password=password, domain=domain)
+    if not ok:
+        return jsonify({"ok": False, "message": message}), 200
+
+    response = {
+        "ok": True,
+        "message": message,
+        "normalized_path": "",
+        "path_exists": None,
+    }
+
+    if sample_path:
+        normalized = normalize_datasheet_path(sample_path, drive_letter, network_root)
+        exists = Path(normalized).exists()
+        response["normalized_path"] = normalized
+        response["path_exists"] = exists
+        if not exists:
+            response["message"] = f"Share auth passed, but sample path was not found: {normalized}"
+
+    return jsonify(response), 200
+
+
 @app.get("/job/<job_id>")
 def job_page(job_id: str):
     job = JOBS.get(job_id)
@@ -218,4 +257,6 @@ def download(job_id: str):
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    host = os.environ.get("DATASHEET_SCANNER_HOST", "127.0.0.1")
+    port = int(os.environ.get("DATASHEET_SCANNER_PORT", "5000"))
+    app.run(host=host, port=port, debug=False)

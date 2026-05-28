@@ -75,6 +75,11 @@
         </label>
 
         <label>
+          Sample datasheet path (optional)
+          <input type="text" name="sample_path" placeholder="H:\\folder\\part.pdf or \\\\server\\share\\folder\\part.pdf">
+        </label>
+
+        <label>
           Ollama model
           <input type="text" name="model" value="llama3.1">
         </label>
@@ -82,6 +87,12 @@
         <div class="hint-box full">
           <strong>Tip:</strong> if users map the same share to different drive letters, enter the letter used in this Excel file and the UNC network root. The app will write a new Excel file with the original columns plus temperature range, source sentence, normalized path, and status columns.
         </div>
+
+        <div class="full actions">
+          <button type="button" class="btn-secondary" id="checkShareButton">Check file share connection</button>
+          <span class="small-text" id="shareCheckBusy" style="display:none;">Checking...</span>
+        </div>
+        <div class="hint-box full" id="shareCheckResult" style="display:none;"></div>
 
         <div class="full actions">
           <button type="submit" class="btn-primary">Start extraction</button>
@@ -116,12 +127,68 @@
     const uploadForm = document.getElementById('uploadForm');
     const loadButton = document.getElementById('loadButton');
     const loadHint = document.getElementById('loadHint');
+    const processForm = document.querySelector('form[action="{{ url_for('process') }}"]');
+    const checkShareButton = document.getElementById('checkShareButton');
+    const shareCheckBusy = document.getElementById('shareCheckBusy');
+    const shareCheckResult = document.getElementById('shareCheckResult');
 
     if (uploadForm && loadButton && loadHint) {
       uploadForm.addEventListener('submit', () => {
         loadButton.disabled = true;
         loadButton.textContent = 'Loading...';
         loadHint.style.display = 'inline';
+      });
+    }
+
+    if (processForm && checkShareButton && shareCheckBusy && shareCheckResult) {
+      checkShareButton.addEventListener('click', async () => {
+        const formData = new FormData(processForm);
+        const payload = {
+          drive_letter: (formData.get('drive_letter') || '').toString(),
+          network_root: (formData.get('network_root') || '').toString(),
+          username: (formData.get('username') || '').toString(),
+          password: (formData.get('password') || '').toString(),
+          domain: (formData.get('domain') || '').toString(),
+          sample_path: (formData.get('sample_path') || '').toString()
+        };
+
+        shareCheckResult.style.display = 'none';
+        shareCheckBusy.style.display = 'inline';
+        checkShareButton.disabled = true;
+
+        try {
+          const response = await fetch('{{ url_for('api_check_share') }}', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const data = await response.json();
+
+          let msg = data.message || 'Check finished.';
+          if (data.normalized_path) {
+            msg += `\nNormalized path: ${data.normalized_path}`;
+          }
+          if (data.path_exists === true) {
+            msg += '\nSample path exists.';
+          } else if (data.path_exists === false) {
+            msg += '\nSample path does not exist.';
+          }
+
+          shareCheckResult.textContent = msg;
+          shareCheckResult.style.display = 'block';
+          shareCheckResult.style.borderColor = data.ok ? 'rgba(34, 197, 94, 0.35)' : 'rgba(239, 68, 68, 0.35)';
+          shareCheckResult.style.background = data.ok ? 'rgba(34, 197, 94, 0.12)' : 'rgba(239, 68, 68, 0.12)';
+          shareCheckResult.style.color = data.ok ? '#bbf7d0' : '#fecaca';
+        } catch (error) {
+          shareCheckResult.textContent = `Connection check failed: ${error}`;
+          shareCheckResult.style.display = 'block';
+          shareCheckResult.style.borderColor = 'rgba(239, 68, 68, 0.35)';
+          shareCheckResult.style.background = 'rgba(239, 68, 68, 0.12)';
+          shareCheckResult.style.color = '#fecaca';
+        } finally {
+          shareCheckBusy.style.display = 'none';
+          checkShareButton.disabled = false;
+        }
       });
     }
   </script>
