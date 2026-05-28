@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datasheet Scanner - Job</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Processing job</p>
+        <h1>Job {{ job_id }}</h1>
+        <p class="subtitle">The app is scanning each PDF datasheet and extracting the temperature range and source sentence.</p>
+      </div>
+    </header>
+
+    {% if error %}
+      <div class="alert alert-error">{{ error }}</div>
+    {% endif %}
+
+    <section class="card">
+      <div class="status-row">
+        <div>
+          <h2 id="statusText">{{ job.status if job else 'unknown' }}</h2>
+          <p id="progressText">{{ job.progress if job else 0 }}%</p>
+        </div>
+        <div class="pill" id="pill">{{ job.status if job else 'unknown' }}</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <p class="small-text" id="countText">{{ job.current if job else 0 }} / {{ job.total if job else 0 }}</p>
+      {% if job and job.status == 'completed' %}
+      <div id="downloadArea" style="display: block;">
+        <a class="btn-primary" href="{{ url_for('download', job_id=job_id) }}">Download output Excel</a>
+      </div>
+      {% else %}
+      <div id="downloadArea" style="display: none;">
+        <a class="btn-primary" href="{{ url_for('download', job_id=job_id) }}">Download output Excel</a>
+      </div>
+      {% endif %}
+    </section>
+
+    <section class="card">
+      <h2>Live log</h2>
+      <div class="log-box" id="logBox">
+        {% if job and job.logs %}
+          {% for line in job.logs %}
+            <div>{{ line }}</div>
+          {% endfor %}
+        {% else %}
+          <div>Waiting for updates...</div>
+        {% endif %}
+      </div>
+      <div class="actions">
+        <a href="{{ url_for('index') }}" class="btn-secondary">Back to upload</a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const jobId = "{{ job_id }}";
+    const statusText = document.getElementById('statusText');
+    const progressText = document.getElementById('progressText');
+    const progressFill = document.getElementById('progressFill');
+    const countText = document.getElementById('countText');
+    const pill = document.getElementById('pill');
+    const logBox = document.getElementById('logBox');
+    const downloadArea = document.getElementById('downloadArea');
+
+    function renderLogs(logs) {
+      logBox.innerHTML = '';
+      (logs || []).forEach((line) => {
+        const div = document.createElement('div');
+        div.textContent = line;
+        logBox.appendChild(div);
+      });
+      logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    async function refresh() {
+      try {
+        const response = await fetch(`/api/job/${jobId}`);
+        const data = await response.json();
+        if (data.error) {
+          statusText.textContent = data.error;
+          pill.textContent = 'error';
+          return;
+        }
+        statusText.textContent = data.status || 'unknown';
+        pill.textContent = data.status || 'unknown';
+        progressText.textContent = `${data.progress || 0}%`;
+        progressFill.style.width = `${data.progress || 0}%`;
+        countText.textContent = `${data.current || 0} / ${data.total || 0}`;
+        renderLogs(data.logs || []);
+        if (data.status === 'completed') {
+          downloadArea.style.display = 'block';
+        }
+      } catch (err) {
+        statusText.textContent = 'connection error';
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 2000);
+  </script>
+</body>
+</html>

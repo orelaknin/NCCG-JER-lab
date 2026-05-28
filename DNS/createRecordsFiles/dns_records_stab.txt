@@ -1,0 +1,12 @@
+add,ladh2976.iil.intel.com,900,A,143.185.151.142
+add,ladh2943.iil.intel.com,900,A,143.185.151.46
+add,ladh2919.iil.intel.com,900,A,143.185.151.48
+add,ladh2662.iil.intel.com,900,A,143.185.151.55
+add,ladh2592.iil.intel.com,900,A,143.185.141.168
+add,ladh2713.iil.intel.com,900,A,143.185.141.154
+add,ladj1926.jer.intel.com,900,A,10.12.233.30
+add,ladj1928.jer.intel.com,900,A,10.12.233.51
+add,ladj1931.jer.intel.com,900,A,10.12.233.46
+add,ladj1933.jer.intel.com,900,A,10.12.233.42
+add,ladj1932.jer.intel.com,900,A,10.12.233.55
+add,ladj1934.jer.intel.com,900,A,10.12.233.28

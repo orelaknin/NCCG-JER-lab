@@ -1,0 +1,5168 @@
+{
+  "export_info": {
+    "timestamp": "2025-11-17T10:26:44.446794",
+    "api_version": "v2",
+    "exporter": "Monday Board Exporter",
+    "board_id": "3852792957"
+  },
+  "board": {
+    "id": "3852792957",
+    "name": "Kanban task board",
+    "description": "Main boards: (SVB, EVB) 2 Weeks from ASSY to delivery \nAssembly -\n(Before the 2 weeks:\nNew program - 1 day \nNew mask - 2 days)\nSet Up - 1 day \n 40 boards - 2 days\nOver all ASSY+ AOI +TH = 5 days\n\nTesting - 14 boards per day\n\nLogi -\nSmall cards:\n\nNext activity-\nAssy start date- to check if can change status.\nTransfer logi- auto- 2 weeks after assy \nstep status- every step will reset\nArrange per priority\n\nTo send email with status change to the relevant user\n\nShirel:\nTime counting\nEmail updates",
+    "state": "active",
+    "board_kind": "public",
+    "workspace": {
+      "id": "322061",
+      "name": "SEALS - Smt Eng Assy Line & Soldering"
+    },
+    "groups": [
+      {
+        "id": "group_title",
+        "title": "On process",
+        "color": "#a25ddc"
+      },
+      {
+        "id": "new_group62405",
+        "title": "Deliverd",
+        "color": "#784BD1"
+      }
+    ],
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "settings_str": "{}"
+      },
+      {
+        "id": "color7",
+        "title": "Status",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":103,\"1\":101,\"2\":7,\"3\":16,\"4\":158,\"6\":154,\"7\":152,\"8\":155,\"9\":15,\"12\":2,\"13\":3,\"15\":6,\"16\":0,\"101\":4,\"102\":159,\"103\":12,\"108\":102,\"152\":108,\"154\":9,\"155\":8,\"158\":13,\"159\":1},\"labels\":{\"0\":\"Next activity\",\"1\":\"Ready for Del ISMP on Yehuda\",\"2\":\"Silicon identification (IMC ACC)\",\"3\":\"ASSY + AOI\",\"4\":\"On Hold\",\"5\":\"TBD\",\"6\":\"TH + AOI\",\"7\":\"Testing\",\"8\":\"Please deliver\",\"9\":\"Delivered\"},\"labels_positions_v2\":{\"0\":5,\"1\":6,\"2\":7,\"3\":1,\"4\":0,\"5\":0,\"6\":2,\"7\":3,\"8\":4,\"9\":8},\"labels_colors\":{\"0\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"},\"1\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"},\"2\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#a1e3f6\",\"border\":\"#a1e3f6\",\"var_name\":\"sail\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#a9bee8\",\"border\":\"#a9bee8\",\"var_name\":\"cold_blue\"},\"7\":{\"color\":\"#bda8f9\",\"border\":\"#bda8f9\",\"var_name\":\"light_magic\"},\"8\":{\"color\":\"#e484bd\",\"border\":\"#e484bd\",\"var_name\":\"kids\"},\"9\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+      },
+      {
+        "id": "numeric",
+        "title": "ASSY QTY",
+        "type": "numbers",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text",
+        "title": "Board P/N",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "color0",
+        "title": "Step status",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date",
+        "title": "Assy start",
+        "type": "date",
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "text5",
+        "title": "Bords Kit",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "color9",
+        "title": "ASSY- Mask",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "color6",
+        "title": "ASSY - Report - Priority",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "color01",
+        "title": "Testing -Mechanics",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Mech + Sys + HW\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+      },
+      {
+        "id": "date1",
+        "title": "Move to testing",
+        "type": "date",
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "date2",
+        "title": "Move to shipping",
+        "type": "date",
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "subtasks",
+        "title": "Subitems",
+        "type": "subtasks",
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[3951046550]}"
+      },
+      {
+        "id": "numeric0",
+        "title": "Debug",
+        "type": "numbers",
+        "settings_str": "{}"
+      },
+      {
+        "id": "numeric6",
+        "title": "QTY left - On ISMP",
+        "type": "numbers",
+        "settings_str": "{}"
+      },
+      {
+        "id": "numeric8",
+        "title": "Delivered",
+        "type": "numbers",
+        "settings_str": "{}"
+      },
+      {
+        "id": "week",
+        "title": "Commit delivery",
+        "type": "week",
+        "settings_str": "{}"
+      },
+      {
+        "id": "creation_log",
+        "title": "Creation Log",
+        "type": "creation_log",
+        "settings_str": "{}"
+      },
+      {
+        "id": "last_updated",
+        "title": "Last Updated",
+        "type": "last_updated",
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown",
+        "title": "Poject",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":true,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"MEV\"},{\"id\":2,\"name\":\"CNV\"},{\"id\":3,\"name\":\"LKV-10GBT\"},{\"id\":4,\"name\":\"MMG\"},{\"id\":5,\"name\":\"LKV-10G-SFI\"},{\"id\":6,\"name\":\"LKV-1GBT\"},{\"id\":7,\"name\":\"MGV\"},{\"id\":8,\"name\":\"AIC\"}],\"deactivated_labels\":[],\"label_limit_count\":1}"
+      },
+      {
+        "id": "dropdown8",
+        "title": "Board type",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"SVB\"},{\"id\":2,\"name\":\"EVB\"},{\"id\":3,\"name\":\"Interposer\"},{\"id\":4,\"name\":\"Coupons\"},{\"id\":5,\"name\":\"Thermal\"},{\"id\":6,\"name\":\"NVM\"},{\"id\":7,\"name\":\"Adaptor\"},{\"id\":8,\"name\":\"SyncE\"}],\"deactivated_labels\":[]}"
+      },
+      {
+        "id": "dropdown4",
+        "title": "Board Name",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"Lapis\"},{\"id\":2,\"name\":\"Sapir\"},{\"id\":3,\"name\":\"Narkis\"},{\"id\":4,\"name\":\"Bareket\"},{\"id\":5,\"name\":\"Pisgah\"},{\"id\":6,\"name\":\"Agat\"},{\"id\":7,\"name\":\"Nevo\"},{\"id\":8,\"name\":\"Almog\"},{\"id\":9,\"name\":\"LCB\"},{\"id\":10,\"name\":\"Sigal\"},{\"id\":11,\"name\":\"DovdEVan\"},{\"id\":12,\"name\":\"Arbel\"},{\"id\":13,\"name\":\"Shoham\"},{\"id\":14,\"name\":\"Dekel\"},{\"id\":15,\"name\":\"Interposer\"},{\"id\":16,\"name\":\"NVM\"},{\"id\":17,\"name\":\"SI-Coupon\"},{\"id\":18,\"name\":\"Root-Port\"}],\"deactivated_labels\":[]}"
+      },
+      {
+        "id": "link",
+        "title": "Silicon Identification - Link",
+        "type": "link",
+        "settings_str": "{}"
+      },
+      {
+        "id": "files",
+        "title": "Silicon Identification - Files",
+        "type": "file",
+        "settings_str": "{\"hide_footer\":false}"
+      },
+      {
+        "id": "text__1",
+        "title": "Comments",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "week____1",
+        "title": "HWE Plan WW",
+        "type": "formula",
+        "settings_str": "{\"formula\":\"(\\\"WW \\\")&WEEKNUM({date__1})\",\"hide_footer\":true}"
+      },
+      {
+        "id": "formula__1",
+        "title": "SEALS commit WW",
+        "type": "formula",
+        "settings_str": "{\"formula\":\"(\\\"WW \\\")&WEEKNUM({date1__1})\"}"
+      },
+      {
+        "id": "formula2__1",
+        "title": "Actual delivery WW",
+        "type": "formula",
+        "settings_str": "{\"formula\":\"(\\\"WW \\\")&WEEKNUM({date4})\"}"
+      },
+      {
+        "id": "dropdown__1",
+        "title": "Fab",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"Fab X\"},{\"id\":2,\"name\":\"Fab A\"},{\"id\":3,\"name\":\"Fab X1\"},{\"id\":4,\"name\":\"Fab A1\"}],\"deactivated_labels\":[]}"
+      },
+      {
+        "id": "dropdown8__1",
+        "title": "Configuration",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":false,\"hide_footer\":false,\"labels\":[{\"id\":1,\"name\":\"Regular BOM\"},{\"id\":2,\"name\":\"CVLP0 assembly\"},{\"id\":3,\"name\":\"MCLP0 assembly\"},{\"id\":4,\"name\":\"MCLP1 assembly\"},{\"id\":5,\"name\":\"SI team assembly\"},{\"id\":6,\"name\":\"VRTT assembly\"},{\"id\":7,\"name\":\"CVLP1 assembly\"}],\"deactivated_labels\":[]}"
+      }
+    ],
+    "items": [
+      {
+        "id": "18361873098",
+        "name": "MMG400 SVB NIC Fab A (\"DEKEL\") - Gorilla - TOP only - Dram team",
+        "state": "active",
+        "created_at": "2025-11-06T08:40:22Z",
+        "updated_at": "2025-11-16T12:43:13Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "TH + AOI",
+            "value": "{\"index\":6,\"changed_at\":\"2025-11-11T12:01:30.834Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-11-10T13:05:32.223Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-11-10",
+            "value": "{\"date\":\"2025-11-10\",\"changed_at\":\"2025-11-10T13:05:34.079Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-13T06:05:03.493Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-13T06:05:05.218Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-11-06 08:40:22 UTC",
+            "value": "{\"created_at\":\"2025-11-06T08:40:22Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:13 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:13Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "8222132118",
+        "name": "MMG400 SVB NIC Fab A (\"DEKEL\") - Sanmina (extra board)",
+        "state": "active",
+        "created_at": "2025-01-13T07:23:11Z",
+        "updated_at": "2025-11-16T12:43:12Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "On Hold",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-01-30T09:20:24.045Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2025-01-02T14:34:57.143Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-01-12",
+            "value": "{\"date\":\"2025-01-12\",\"changed_at\":\"2025-01-12T07:20:49.232Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04542",
+            "value": "\"250-04542\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": "{\"week\":\"\"}",
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-01-13 07:23:11 UTC",
+            "value": "{\"created_at\":\"2025-01-13T07:23:11Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:12 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:12Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "18361871328",
+        "name": "MMG400 SVB NIC Fab A (\"DEKEL\") - Gorilla",
+        "state": "active",
+        "created_at": "2025-11-06T08:40:01Z",
+        "updated_at": "2025-11-16T12:43:12Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "TH + AOI",
+            "value": "{\"index\":6,\"changed_at\":\"2025-11-11T12:01:56.246Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-11-10T13:05:29.125Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-11-10",
+            "value": "{\"date\":\"2025-11-10\",\"changed_at\":\"2025-11-10T13:05:31.094Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-13T06:05:15.261Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-13T06:05:16.952Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-11-06 08:40:01 UTC",
+            "value": "{\"created_at\":\"2025-11-06T08:40:01Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:12 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:12Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "9175871407",
+        "name": "MMG400 SVB NIC Fab A (\"DEKEL\") - Gorilla - BOT only - Dram team (With soldered unit)",
+        "state": "active",
+        "created_at": "2025-05-18T11:54:07Z",
+        "updated_at": "2025-11-16T12:43:12Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "2",
+            "value": "\"2\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "ASSY + AOI",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-05-19T09:33:31.361Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-05-18T11:54:14.222Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-05-19",
+            "value": "{\"date\":\"2025-05-19\",\"changed_at\":\"2025-05-19T09:33:35.058Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-05-18 11:54:07 UTC",
+            "value": "{\"created_at\":\"2025-05-18T11:54:07Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:12 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:12Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "9960680057",
+        "name": "MMG400 SVB NIC Fab A (\"DEKEL\") - Gorilla -  (With soldered unit)",
+        "state": "active",
+        "created_at": "2025-09-03T12:06:31Z",
+        "updated_at": "2025-11-16T12:43:12Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "On Hold",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-09-03T12:06:37.137Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-09-03T12:07:10.750Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-09-03 12:06:31 UTC",
+            "value": "{\"created_at\":\"2025-09-03T12:06:31Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:12 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:12Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "9960682036",
+        "name": "MMG400 EVB FAB A1 (\"RIMON\")  - Sanmina -  (With soldered unit)",
+        "state": "active",
+        "created_at": "2025-09-03T12:06:44Z",
+        "updated_at": "2025-11-16T12:43:12Z",
+        "group": {
+          "id": "group_title",
+          "title": "On process"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "On Hold",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-09-03T12:06:57.516Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-09-03T12:07:19.904Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-09-03 12:06:44 UTC",
+            "value": "{\"created_at\":\"2025-09-03T12:06:44Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:43:12 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:43:12Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "9960671938",
+        "name": "NOVA card -ETH800-PCIEG6 TRLCB FAB-A - RedBoard",
+        "state": "active",
+        "created_at": "2025-09-03T12:05:42Z",
+        "updated_at": "2025-11-16T13:05:17Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-20T10:01:43.000Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-09-04T06:31:38.622Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-09-04",
+            "value": "{\"date\":\"2025-09-04\",\"changed_at\":\"2025-09-04T06:31:40.695Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04900",
+            "value": "\"250-04900\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-09-17T08:11:29.895Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-09-17T08:11:31.484Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-09-03 12:05:42 UTC",
+            "value": "{\"created_at\":\"2025-09-03T12:05:42Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 13:05:17 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T13:05:17Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MGV",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "9960671207",
+        "name": "NOVA card -ETH800-PCIEG6 TRLCB FAB-A - NanYa",
+        "state": "active",
+        "created_at": "2025-09-03T12:05:34Z",
+        "updated_at": "2025-11-16T13:05:21Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-20T10:01:46.554Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2025-09-04T06:31:34.415Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2025-09-04",
+            "value": "{\"date\":\"2025-09-04\",\"changed_at\":\"2025-09-04T06:31:36.406Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04900",
+            "value": "\"250-04900\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-09-17T08:11:25.160Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-09-17T08:11:26.909Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2025-09-03 12:05:34 UTC",
+            "value": "{\"created_at\":\"2025-09-03T12:05:34Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 13:05:21 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T13:05:21Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MGV",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "7338561507",
+        "name": "RP adapter P0 - FAB A -AKMM",
+        "state": "active",
+        "created_at": "2024-09-01T10:08:29Z",
+        "updated_at": "2024-10-21T06:19:00Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "5",
+            "value": "\"5\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-10-21T06:18:59.892Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-09-01T10:10:19.181Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-09-30",
+            "value": "{\"date\":\"2024-09-30\",\"changed_at\":\"2024-09-30T10:28:26.778Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-10-13T11:54:10.658Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-10-13T11:54:13.615Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-09-01 10:08:29 UTC",
+            "value": "{\"created_at\":\"2024-09-01T10:08:29Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-10-21 06:19:00 UTC",
+            "value": "{\"updated_at\":\"2024-10-21T06:19:00Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": [
+          {
+            "id": "7369407045",
+            "name": "250-04522 3A",
+            "state": "active",
+            "created_at": "2024-09-05T12:37:14Z",
+            "updated_at": "2024-09-30T10:37:32Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7369407717",
+            "name": "250-04521 3B",
+            "state": "active",
+            "created_at": "2024-09-05T12:37:22Z",
+            "updated_at": "2024-09-30T10:37:34Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7369408495",
+            "name": "250-04517 3C",
+            "state": "active",
+            "created_at": "2024-09-05T12:37:32Z",
+            "updated_at": "2024-09-30T10:37:35Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7528740864",
+            "name": "250-04509",
+            "state": "active",
+            "created_at": "2024-09-30T10:51:54Z",
+            "updated_at": "2024-09-30T10:52:18Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "2",
+                "value": "\"2\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7338561541",
+        "name": "RP adapter P1 - FAB A -AKMM",
+        "state": "active",
+        "created_at": "2024-09-01T10:08:31Z",
+        "updated_at": "2024-10-21T06:19:03Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "6",
+            "value": "\"6\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "5",
+            "value": "\"5\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-10-21T06:19:02.599Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-09-01T10:10:20.685Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-09-30",
+            "value": "{\"date\":\"2024-09-30\",\"changed_at\":\"2024-09-30T10:29:18.575Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-10-14T07:51:27.999Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-10-14T07:51:29.858Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-09-01 10:08:31 UTC",
+            "value": "{\"created_at\":\"2024-09-01T10:08:31Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-10-21 06:19:03 UTC",
+            "value": "{\"updated_at\":\"2024-10-21T06:19:03Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": [
+          {
+            "id": "7369418970",
+            "name": "250-04519 4A",
+            "state": "active",
+            "created_at": "2024-09-05T12:38:50Z",
+            "updated_at": "2024-09-30T10:37:40Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7369420451",
+            "name": "250-04513 4B",
+            "state": "active",
+            "created_at": "2024-09-05T12:38:58Z",
+            "updated_at": "2024-09-30T10:37:41Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7369421793",
+            "name": "250-04514 4C",
+            "state": "active",
+            "created_at": "2024-09-05T12:39:05Z",
+            "updated_at": "2024-09-30T10:37:42Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7369422972",
+            "name": "250-04511 4D",
+            "state": "active",
+            "created_at": "2024-09-05T12:39:12Z",
+            "updated_at": "2024-09-30T10:37:43Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "1",
+                "value": "\"1\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "id": "7528773438",
+            "name": "250-04523",
+            "state": "active",
+            "created_at": "2024-09-30T10:57:51Z",
+            "updated_at": "2024-09-30T10:57:56Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "2",
+                "value": "\"2\"",
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6717310446",
+        "name": "NESSI (RMII card)",
+        "state": "active",
+        "created_at": "2024-05-28T08:10:42Z",
+        "updated_at": "2024-09-01T09:15:50Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "300",
+            "value": "\"300\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Ready for Del ISMP on Yehuda",
+            "value": "{\"index\":1,\"changed_at\":\"2024-09-01T09:15:47.946Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-05-28T08:11:58.273Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-08-01",
+            "value": "{\"date\":\"2024-08-01\",\"changed_at\":\"2024-08-01T11:04:24.858Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04593",
+            "value": "\"250-04593\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-08-14T10:44:12.150Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-08-14T10:44:13.805Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-08-22",
+            "value": "{\"date\":\"2024-08-22\",\"changed_at\":\"2024-08-22T11:25:52.733Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "2024-09-01",
+            "value": "{\"date\":\"2024-09-01\",\"changed_at\":\"2024-09-01T09:15:49.724Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-05-28 08:10:42 UTC",
+            "value": "{\"created_at\":\"2024-05-28T08:10:42Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-09-01 09:15:50 UTC",
+            "value": "{\"updated_at\":\"2024-09-01T09:15:50Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "Adaptor",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6987927312",
+        "name": "MMG NVM's",
+        "state": "active",
+        "created_at": "2024-07-09T08:21:26Z",
+        "updated_at": "2025-11-16T12:42:59Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "22",
+            "value": "\"22\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Testing",
+            "value": "{\"index\":7,\"changed_at\":\"2024-07-11T06:27:57.781Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-07-09T13:12:17.001Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-07-09",
+            "value": "{\"date\":\"2024-07-09\",\"changed_at\":\"2024-07-09T13:12:14.891Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-07-15T11:12:51.092Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-07-15T11:12:52.788Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-07-11",
+            "value": "{\"date\":\"2024-07-11\",\"changed_at\":\"2024-07-11T06:28:01.763Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-07-09 08:21:26 UTC",
+            "value": "{\"created_at\":\"2024-07-09T08:21:26Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2025-11-16 12:42:59 UTC",
+            "value": "{\"updated_at\":\"2025-11-16T12:42:59Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6717309797",
+        "name": "M.2 SPVL card",
+        "state": "active",
+        "created_at": "2024-05-28T08:10:29Z",
+        "updated_at": "2024-08-12T11:22:07Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "350",
+            "value": "\"350\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Testing",
+            "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2024-07-01T12:00:55.007Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-05-28T08:11:56.975Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-06-19",
+            "value": "{\"date\":\"2024-06-19\",\"changed_at\":\"2024-06-19T07:37:59.940Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04226",
+            "value": "\"250-04226\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-07-15T10:43:31.949Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-07-15T10:43:35.756Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-07-01",
+            "value": "{\"date\":\"2024-07-01\",\"changed_at\":\"2024-07-01T12:00:57.505Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-05-28 08:10:29 UTC",
+            "value": "{\"created_at\":\"2024-05-28T08:10:29Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-08-12 11:22:07 UTC",
+            "value": "{\"updated_at\":\"2024-08-12T11:22:07Z\",\"updater_id\":\"63332933\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MMG",
+            "value": "{\"ids\":[4]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "Adaptor",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": "Fab A",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": "Regular BOM",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "4243533304",
+        "name": "Replacing o U0 to U1 component on Pisgah A2 (PPV boards)",
+        "state": "active",
+        "created_at": "2023-04-02T08:09:56Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "101",
+            "value": "\"101\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "0",
+            "value": "\"0\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "94",
+            "value": "\"94\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "-7",
+            "value": "\"-7\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2023-04-02T08:10:02.470Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04229",
+            "value": "\"250-04229\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-04-19",
+            "value": "{\"date\":\"2023-04-19\",\"changed_at\":\"2023-04-19T11:17:20.826Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-04-02 08:09:56 UTC",
+            "value": "{\"created_at\":\"2023-04-02T08:09:56Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MEV",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Pisgah",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "4302319716",
+        "name": "CNV SVB-QSFP Fab-A (\"Sapir\") - ISU",
+        "state": "active",
+        "created_at": "2023-04-13T10:21:55Z",
+        "updated_at": "2024-02-13T13:46:52Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "10",
+            "value": "\"10\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "3",
+            "value": "\"3\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "0",
+            "value": "\"0\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Testing",
+            "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-07-18T05:07:18.527Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2023-05-01T13:21:46.863Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2023-05-04",
+            "value": "{\"date\":\"2023-05-04\",\"changed_at\":\"2023-05-01T13:22:03.459Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04410",
+            "value": "\"250-04410\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-06-18T07:16:07.575Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-06-18T07:16:12.040Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-07-18",
+            "value": "{\"date\":\"2023-07-18\",\"changed_at\":\"2023-07-18T05:18:05.896Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-04-13 10:21:55 UTC",
+            "value": "{\"created_at\":\"2023-04-13T10:21:55Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-02-13 13:46:52 UTC",
+            "value": "{\"updated_at\":\"2024-02-13T13:46:52Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Sapir",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "5389387373",
+        "name": "MEV EVB FAB A2 (\"Nevo\") - for C0 - With soldered units",
+        "state": "active",
+        "created_at": "2023-10-25T11:08:16Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "6",
+            "value": "\"6\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "6",
+            "value": "\"6\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "0",
+            "value": "\"0\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-09T12:08:13.256Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "200-04201-03",
+            "value": "\"200-04201-03\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-14T12:45:37.951Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-14T12:45:41.659Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-11-08",
+            "value": "{\"date\":\"2023-11-08\",\"changed_at\":\"2023-11-08T08:09:39.872Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-10-25 11:08:16 UTC",
+            "value": "{\"created_at\":\"2023-10-25T11:08:16Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MEV",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "EVB",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Nevo",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "5296998376",
+        "name": "EVB-QSFP Fab-A (\"Lapis\")  - ISU & AKMM  - (With Soldered unit)",
+        "state": "active",
+        "created_at": "2023-10-09T09:36:30Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "24",
+            "value": "\"24\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "24",
+            "value": "\"24\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "0",
+            "value": "\"0\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-02-15T11:59:29.960Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-02-15",
+            "value": "{\"date\":\"2024-02-15\",\"changed_at\":\"2024-02-15T11:59:28.427Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-02-20T12:53:09.971Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-02-20T12:53:11.839Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-02-21",
+            "value": "{\"date\":\"2024-02-21\",\"changed_at\":\"2024-02-21T09:24:20.022Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "2024-02-21",
+            "value": "{\"date\":\"2024-02-21\",\"changed_at\":\"2024-02-21T13:06:22.848Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-10-09 09:36:30 UTC",
+            "value": "{\"created_at\":\"2023-10-09T09:36:30Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "EVB",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Lapis",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "3859940932",
+        "name": "MEV SVB-NIC-LPDDR4x FAB-A3 (\"Pisgah\") - for C0 batch 1",
+        "state": "active",
+        "created_at": "2023-01-24T05:58:15Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "33",
+            "value": "\"33\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "30",
+            "value": "\"30\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "2",
+            "value": "\"2\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2023-02-26T12:26:55.300Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2023-01-29",
+            "value": "{\"date\":\"2023-01-29\",\"changed_at\":\"2023-01-24T06:08:15.112Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04222",
+            "value": "\"250-04222\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-01-29T13:37:48.203Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-02-06T13:54:46.701Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-02-26",
+            "value": "{\"date\":\"2023-02-26\",\"changed_at\":\"2023-02-26T12:26:53.762Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "2023-03-16",
+            "value": "{\"date\":\"2023-03-16\",\"changed_at\":\"2023-03-16T07:53:37.947Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-01-24 05:58:15 UTC",
+            "value": "{\"created_at\":\"2023-01-24T05:58:15Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MEV",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Pisgah",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": [
+          {
+            "id": "3951049445",
+            "name": "Test for debug activity",
+            "state": "active",
+            "created_at": "2023-02-08T14:31:22Z",
+            "updated_at": "2023-02-08T14:31:45Z",
+            "group": {
+              "id": "topics",
+              "title": "Subitems"
+            },
+            "column_values": [
+              {
+                "id": "numbers9__1",
+                "text": "",
+                "value": null,
+                "type": "numbers"
+              },
+              {
+                "id": "text_mkmb1hwt",
+                "text": "",
+                "value": null,
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5389116978",
+        "name": "MEV SVB-NIC-LPDDR4x FAB-A3 (\"Pisgah\") - for C0 - With soldered units",
+        "state": "active",
+        "created_at": "2023-10-25T10:00:31Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "5",
+            "value": "\"5\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "2",
+            "value": "\"2\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-13T09:47:43.531Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "200-04222-04",
+            "value": "\"200-04222-04\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-14T12:45:49.533Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-14T12:45:51.493Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-11-06",
+            "value": "{\"date\":\"2023-11-06\",\"changed_at\":\"2023-11-06T13:58:05.461Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-10-25 10:00:31 UTC",
+            "value": "{\"created_at\":\"2023-10-25T10:00:31Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MEV",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Pisgah",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6105015699",
+        "name": "SVB-QSFP Fab-A1 (\"Sapir\") - AKMM",
+        "state": "active",
+        "created_at": "2024-02-21T07:04:04Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "37",
+            "value": "\"37\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "30",
+            "value": "\"30\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "2",
+            "value": "\"2\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-03-04T12:48:13.216Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-02-22",
+            "value": "{\"date\":\"2024-02-22\",\"changed_at\":\"2024-02-22T06:32:47.595Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-03-03T11:20:39.505Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-03-03T11:20:41.053Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-02-28",
+            "value": "{\"date\":\"2024-02-28\",\"changed_at\":\"2024-02-28T13:27:35.220Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-02-21 07:04:04 UTC",
+            "value": "{\"created_at\":\"2024-02-21T07:04:04Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Sapir",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6293750276",
+        "name": "SVB NIC SFP(x8) Fab-A (\"Agat\") - AKKM",
+        "state": "active",
+        "created_at": "2024-03-20T09:50:19Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "11",
+            "value": "\"11\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "9",
+            "value": "\"9\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "2",
+            "value": "\"2\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-03-31T07:33:30.232Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-03-31",
+            "value": "{\"date\":\"2024-03-31\",\"changed_at\":\"2024-03-31T07:33:30.965Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-05-01T08:22:32.392Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-05-01T08:22:34.172Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-04-01",
+            "value": "{\"date\":\"2024-04-01\",\"changed_at\":\"2024-04-01T13:00:27.954Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-03-20 09:50:19 UTC",
+            "value": "{\"created_at\":\"2024-03-20T09:50:19Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Agat",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "4939855147",
+        "name": "EVB-QSFP Fab-A (\"Lapis\")  - ISU",
+        "state": "active",
+        "created_at": "2023-08-07T05:54:09Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "11",
+            "value": "\"11\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "8",
+            "value": "\"8\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "3",
+            "value": "\"3\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2023-11-09T13:16:38.716Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "200-04430",
+            "value": "\"200-04430\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-29T11:32:16.354Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-11-29T11:32:19.203Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-11-16",
+            "value": "{\"date\":\"2023-11-16\",\"changed_at\":\"2023-11-16T09:49:46.900Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-08-07 05:54:09 UTC",
+            "value": "{\"created_at\":\"2023-08-07T05:54:09Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "EVB",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Lapis",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6717292692",
+        "name": "SyncE (LKV to CNV)",
+        "state": "active",
+        "created_at": "2024-05-28T08:06:36Z",
+        "updated_at": "2024-06-06T05:34:39Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "3",
+            "value": "\"3\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-06-06T05:34:38.848Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-05-29T08:50:47.653Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-05-29",
+            "value": "{\"date\":\"2024-05-29\",\"changed_at\":\"2024-05-29T08:51:06.681Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-05-28 08:06:36 UTC",
+            "value": "{\"created_at\":\"2024-05-28T08:06:36Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-06-06 05:34:39 UTC",
+            "value": "{\"updated_at\":\"2024-06-06T05:34:39Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SyncE",
+            "value": "{\"ids\":[8]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "6213402796",
+        "name": "SVB-QSFP Fab-A1  (\"Sapir\") - AKMM",
+        "state": "active",
+        "created_at": "2024-03-07T14:02:17Z",
+        "updated_at": "2024-05-15T12:44:41Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "51",
+            "value": "\"51\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "",
+            "value": null,
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "47",
+            "value": "\"47\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "4",
+            "value": "\"4\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2024-03-19T09:29:44.279Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2024-03-19",
+            "value": "{\"date\":\"2024-03-19\",\"changed_at\":\"2024-03-19T09:29:43.546Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-04-08T09:09:40.158Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-04-08T09:09:42.239Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2024-03-26",
+            "value": "{\"date\":\"2024-03-26\",\"changed_at\":\"2024-03-26T13:34:47.709Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "",
+            "value": null,
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "",
+            "value": null,
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2024-03-07 14:02:17 UTC",
+            "value": "{\"created_at\":\"2024-03-07T14:02:17Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:41 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:41Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "CNV",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Sapir",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      },
+      {
+        "id": "3859940608",
+        "name": "MEV SVB-NIC-LPDDR4x FAB A2 (\"Pisgah-ENEPIG\") - for PPV batch 1",
+        "state": "active",
+        "created_at": "2023-01-24T05:58:04Z",
+        "updated_at": "2024-05-15T12:44:40Z",
+        "group": {
+          "id": "new_group62405",
+          "title": "Deliverd"
+        },
+        "column_values": [
+          {
+            "id": "subtasks",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "numeric",
+            "text": "40",
+            "value": "\"40\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric0",
+            "text": "1",
+            "value": "\"1\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric8",
+            "text": "31",
+            "value": "\"31\"",
+            "type": "numbers"
+          },
+          {
+            "id": "numeric6",
+            "text": "8",
+            "value": "\"8\"",
+            "type": "numbers"
+          },
+          {
+            "id": "color7",
+            "text": "Delivered",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2024-05-15T12:44:39.114Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color0",
+            "text": "Working on it",
+            "value": "{\"index\":0,\"invalid\":false,\"changed_at\":\"2023-03-15T14:44:00.963Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "text__1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "date",
+            "text": "2023-02-08",
+            "value": "{\"date\":\"2023-02-08\",\"changed_at\":\"2023-02-07T13:59:19.942Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "text",
+            "text": "250-04229",
+            "value": "\"250-04229\"",
+            "type": "text"
+          },
+          {
+            "id": "color9",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-01-29T13:39:19.839Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color6",
+            "text": "Done",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-02-12T14:19:42.037Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color01",
+            "text": "Mech + Sys + HW",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-02-19T11:39:23.051Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "link",
+            "text": "",
+            "value": null,
+            "type": "link"
+          },
+          {
+            "id": "files",
+            "text": "",
+            "value": null,
+            "type": "file"
+          },
+          {
+            "id": "date1",
+            "text": "2023-02-14",
+            "value": "{\"date\":\"2023-02-14\",\"changed_at\":\"2023-02-14T12:28:45.919Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "date2",
+            "text": "2023-03-21",
+            "value": "{\"date\":\"2023-03-21\",\"changed_at\":\"2023-03-21T08:28:34.665Z\"}",
+            "type": "date"
+          },
+          {
+            "id": "week",
+            "text": "2023-02-19 - 2023-02-25",
+            "value": "{\"week\":{\"endDate\":\"2023-02-26\",\"startDate\":\"2023-02-20\"}}",
+            "type": "week"
+          },
+          {
+            "id": "creation_log",
+            "text": "2023-01-24 05:58:04 UTC",
+            "value": "{\"created_at\":\"2023-01-24T05:58:04Z\",\"creator_id\":\"30933106\"}",
+            "type": "creation_log"
+          },
+          {
+            "id": "last_updated",
+            "text": "2024-05-15 12:44:40 UTC",
+            "value": "{\"updated_at\":\"2024-05-15T12:44:40Z\",\"updater_id\":\"30933106\"}",
+            "type": "last_updated"
+          },
+          {
+            "id": "dropdown",
+            "text": "MEV",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8",
+            "text": "SVB",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown4",
+            "text": "Pisgah",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown8__1",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "week____1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          },
+          {
+            "id": "formula2__1",
+            "text": "",
+            "value": null,
+            "type": "formula"
+          }
+        ],
+        "subitems": []
+      }
+    ]
+  }
+}

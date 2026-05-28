@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "name": "temperature_range",
+      "output_column": "temperature_range",
+      "source_column": "source_sentence",
+      "prompt": "Extract the operating temperature range of the component from the datasheet text. Return the value exactly as a concise range such as -40 C to 85 C or -40°C to 125°C. Also return the exact source sentence from the datasheet that supports the value. If there is both operating and storage temperature, prefer operating temperature. If the range is not present, return empty strings."
+    }
+  ]
+}

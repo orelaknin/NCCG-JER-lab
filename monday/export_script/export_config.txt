@@ -1,0 +1,7 @@
+# Monday.com Group Export Configuration
+# Format: board_id,output_filename
+# Lines starting with # are comments
+
+# Example entries:
+3852792957,Kanban_task_board.json
+4610339484,MMG400_all_boards_and_cards.json

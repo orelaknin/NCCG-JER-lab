@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datasheet Scanner</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Local datasheet extraction</p>
+        <h1>Datasheet Scanner</h1>
+        <p class="subtitle">Upload an Excel file, choose the datasheet path and unique ID columns, then extract temperature range and source sentence from PDF datasheets.</p>
+      </div>
+    </header>
+
+    {% if error %}
+    <div class="alert alert-error">{{ error }}</div>
+    {% endif %}
+
+    {% if session %}
+    <section class="card">
+      <h2>Workbook loaded</h2>
+      <p><strong>File:</strong> {{ session.file_name }}</p>
+      <p><strong>Columns found:</strong> {{ session.columns|length }}</p>
+
+      <form method="post" action="{{ url_for('process') }}" class="form-grid">
+        <input type="hidden" name="token" value="{{ token }}">
+
+        <label>
+          Datasheet path column
+          <select name="datasheet_column" required>
+            <option value="">Select a column</option>
+            {% for column in session.columns %}
+              <option value="{{ column }}">{{ column }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          Unique ID column
+          <select name="unique_id_column" required>
+            <option value="">Select a column</option>
+            {% for column in session.columns %}
+              <option value="{{ column }}">{{ column }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          Mapped drive letter to replace
+          <input type="text" name="drive_letter" placeholder="H:">
+        </label>
+
+        <label>
+          Network UNC root
+          <input type="text" name="network_root" placeholder="\\server\share">
+        </label>
+
+        <label>
+          Username
+          <input type="text" name="username" placeholder="domain or user">
+        </label>
+
+        <label>
+          Domain
+          <input type="text" name="domain" placeholder="optional domain">
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password" placeholder="share password">
+        </label>
+
+        <label>
+          Ollama model
+          <input type="text" name="model" value="llama3.1">
+        </label>
+
+        <div class="hint-box full">
+          <strong>Tip:</strong> if users map the same share to different drive letters, enter the letter used in this Excel file and the UNC network root. The app will write a new Excel file with the original columns plus temperature range, source sentence, normalized path, and status columns.
+        </div>
+
+        <div class="full actions">
+          <button type="submit" class="btn-primary">Start extraction</button>
+          <a href="{{ url_for('index') }}" class="btn-secondary">Upload another file</a>
+        </div>
+      </form>
+    </section>
+    {% endif %}
+
+    <section class="card">
+      <h2>Upload Excel file</h2>
+      <form method="post" action="{{ url_for('upload_excel') }}" enctype="multipart/form-data" class="upload-form" id="uploadForm">
+        <label>
+          Excel file
+          <input type="file" name="excel_file" accept=".xlsx,.xlsm,.xls" required>
+        </label>
+        <div class="actions">
+          <button type="submit" class="btn-primary" id="loadButton">Load workbook</button>
+          <span class="small-text" id="loadHint" style="display:none;">Loading workbook headers...</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Extraction rule</h2>
+      <p>The app uses this prompt for the first extraction task:</p>
+      <pre class="prompt">{{ prompt }}</pre>
+    </section>
+  </div>
+
+  <script>
+    const uploadForm = document.getElementById('uploadForm');
+    const loadButton = document.getElementById('loadButton');
+    const loadHint = document.getElementById('loadHint');
+
+    if (uploadForm && loadButton && loadHint) {
+      uploadForm.addEventListener('submit', () => {
+        loadButton.disabled = true;
+        loadButton.textContent = 'Loading...';
+        loadHint.style.display = 'inline';
+      });
+    }
+  </script>
+</body>
+</html>

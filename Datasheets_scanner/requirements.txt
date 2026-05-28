@@ -1,0 +1,5 @@
+flask
+pymupdf
+ollama
+pandas
+openpyxl

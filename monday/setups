@@ -1,0 +1,4920 @@
+{
+  "export_info": {
+    "timestamp": "2025-11-03T14:41:38.423248",
+    "api_version": "v2",
+    "exporter": "Monday Board Exporter",
+    "board_id": "9651589266"
+  },
+  "board": {
+    "id": "9651589266",
+    "name": "Setups",
+    "description": null,
+    "state": "active",
+    "board_kind": "public",
+    "workspace": {
+      "id": "850472",
+      "name": "Israel EPG Lab Team"
+    },
+    "groups": [
+      {
+        "id": "group_mkws4j1q",
+        "title": "Vishnia, Adi - Regression",
+        "color": "#037f4c"
+      },
+      {
+        "id": "group_mkwsbx0z",
+        "title": "Vaknin, Avi",
+        "color": "#7f5347"
+      },
+      {
+        "id": "group_mkwsqnrv",
+        "title": "Goldneberg, Yaron",
+        "color": "#007eb5"
+      },
+      {
+        "id": "group_mkwsggfc",
+        "title": "Khoretz, Dmitri",
+        "color": "#a25ddc"
+      },
+      {
+        "id": "group_mkws4vx9",
+        "title": "Sabag, Sapir",
+        "color": "#ff007f"
+      },
+      {
+        "id": "group_mkwsnfky",
+        "title": "Monastirski, Michael",
+        "color": "#bb3354"
+      },
+      {
+        "id": "group_mkwsm4t5",
+        "title": "BKC - Boris",
+        "color": "#579bfc"
+      },
+      {
+        "id": "group_mkwsc5r3",
+        "title": "Bring up Kick-off",
+        "color": "#ffcb00"
+      }
+    ],
+    "columns": [
+      {
+        "id": "name",
+        "title": "Name",
+        "type": "name",
+        "settings_str": "{}"
+      },
+      {
+        "id": "subtasks_mkt4ckcb",
+        "title": "Subitems",
+        "type": "subtasks",
+        "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9651590912]}"
+      },
+      {
+        "id": "dropdown_mktym0j5",
+        "title": "Frame type",
+        "type": "dropdown",
+        "settings_str": "{\"limit_select\":false,\"labels\":[{\"id\":0,\"name\":\"SH\"},{\"id\":1,\"name\":\"rotatable\"},{\"id\":2,\"name\":\"DUT1\"},{\"id\":3,\"name\":\"L\"},{\"id\":4,\"name\":\"DUT0\"},{\"id\":5,\"name\":\"N/A\"},{\"id\":6,\"name\":\"MH\"},{\"id\":7,\"name\":\"\"},{\"id\":8,\"name\":\"0\"},{\"id\":9,\"name\":\"Rotatble\"}],\"deactivated_labels\":[]}"
+      },
+      {
+        "id": "text_mktyh8k0",
+        "title": "User",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown_mkty6vha",
+        "title": "Type",
+        "type": "dropdown",
+        "settings_str": "{\"labels\":[{\"id\":0,\"name\":\"DUT\"},{\"id\":1,\"name\":\"LP\"},{\"id\":2,\"name\":\"DUT0\"},{\"id\":3,\"name\":\"DUT1\"},{\"id\":4,\"name\":\"DUT2\"},{\"id\":5,\"name\":\"DUT3\"},{\"id\":6,\"name\":\"\"},{\"id\":7,\"name\":\"DEKEL\"},{\"id\":8,\"name\":\"15\"},{\"id\":9,\"name\":\"6\"},{\"id\":10,\"name\":\"0\"},{\"id\":11,\"name\":\"4\"},{\"id\":12,\"name\":\"no need\"},{\"id\":13,\"name\":\"25\"},{\"id\":14,\"name\":\"DUT host 0\"},{\"id\":15,\"name\":\"DUT host 1\"},{\"id\":16,\"name\":\"Dekel\"},{\"id\":17,\"name\":\"DUT host 2\"},{\"id\":18,\"name\":\"DUT host 3\"},{\"id\":19,\"name\":\"Dekel + RP\"},{\"id\":20,\"name\":\"SVB\"},{\"id\":21,\"name\":\"RP\"},{\"id\":22,\"name\":\"host:1\\ndekel:2\"},{\"id\":23,\"name\":\"SV_LAB T-25\"}]}"
+      },
+      {
+        "id": "text_mktyf2zy",
+        "title": "HostName",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown_mkty2c6n",
+        "title": "DDR",
+        "type": "dropdown",
+        "settings_str": "{\"labels\":[{\"id\":0,\"name\":\"128GB\"},{\"id\":1,\"name\":\"128\"},{\"id\":2,\"name\":\"64\"},{\"id\":3,\"name\":\"\"},{\"id\":4,\"name\":\"64GB\"},{\"id\":5,\"name\":\"1024GB\"},{\"id\":6,\"name\":\"1024\"},{\"id\":7,\"name\":\"896\"},{\"id\":8,\"name\":\"512GB\"},{\"id\":9,\"name\":\"512\"},{\"id\":10,\"name\":\"96GB\"},{\"id\":11,\"name\":\"128BG\"},{\"id\":12,\"name\":\"23\"}]}"
+      },
+      {
+        "id": "text_mktye8k5",
+        "title": "MEV",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkty4jgb",
+        "title": "Unit",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mktyx0v1",
+        "title": "S/N UNIT",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "boolean_mktyfqcy",
+        "title": "RP adapter",
+        "type": "checkbox",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkty83ft",
+        "title": "HW",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkty5e75",
+        "title": "Zabbix",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mktyn15x",
+        "title": "Block",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mktym3sp",
+        "title": "Comments",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "dropdown_mktyg7zj",
+        "title": "NUC",
+        "type": "dropdown",
+        "settings_str": "{\"labels\":[{\"name\":\"?\",\"id\":1},{\"name\":\"ladw10-408\",\"id\":2},{\"name\":\"ladw10-331\",\"id\":3},{\"name\":\"ladw10-556\",\"id\":4},{\"name\":\"ladw10-599\",\"id\":5},{\"name\":\"ladw10-660\",\"id\":6},{\"name\":\"ladw10-420\",\"id\":7},{\"name\":\"ladw10-664\",\"id\":8},{\"name\":\"ladw10-693\",\"id\":9},{\"name\":\"ladw10-401\",\"id\":10},{\"name\":\"ladw10-561\",\"id\":11},{\"name\":\"ladw10-594\",\"id\":12},{\"name\":\"ladw10-681\",\"id\":13},{\"name\":\"ladw10-679\",\"id\":14},{\"name\":\"ladw10-249\",\"id\":15},{\"name\":\"N/A\",\"id\":16},{\"name\":\"ladw10-483\",\"id\":17},{\"name\":\"need nuc\",\"id\":18},{\"name\":\"ladw10-419\",\"id\":19},{\"name\":\"ladw10-616\",\"id\":20},{\"name\":\"ladw10-363\",\"id\":21},{\"name\":\"ladw10-247\",\"id\":22},{\"name\":\"ladw10-573\",\"id\":23},{\"name\":\"ladw10-577\",\"id\":24},{\"name\":\"ladw10-643\",\"id\":25},{\"id\":26,\"name\":\"ladw10-618\"},{\"id\":27,\"name\":\"ladw10-572\"},{\"id\":28,\"name\":\"ladw10-596\"},{\"id\":29,\"name\":\"ladw10-522\"},{\"id\":30,\"name\":\"ladw10-493\"},{\"id\":31,\"name\":\"ladw10-600\"},{\"id\":32,\"name\":\"ladw10-680\"},{\"id\":33,\"name\":\"\"},{\"id\":34,\"name\":\"ladw10-666\"},{\"id\":35,\"name\":\"ladw10-678\"},{\"id\":36,\"name\":\"ladw10-589\"},{\"id\":37,\"name\":\"ladw10-478\"},{\"id\":38,\"name\":\"ladw10-692\"},{\"id\":39,\"name\":\"ladw10-337/ladw10-385\"},{\"id\":40,\"name\":\"ladw10-695\"},{\"id\":41,\"name\":\"ladw10-334\"},{\"id\":42,\"name\":\"lad10-682\"},{\"id\":43,\"name\":\"ladw10-441\"},{\"id\":44,\"name\":\"ladjit818\"},{\"id\":45,\"name\":\"ladjit667\"},{\"id\":46,\"name\":\"ladjit379\"},{\"id\":47,\"name\":\"ladjit702\"},{\"id\":48,\"name\":\"ladw10-691\"},{\"id\":49,\"name\":\"ladw10-514\"},{\"id\":50,\"name\":\"ladw10-601\"},{\"id\":51,\"name\":\"ladw10-049\"},{\"id\":52,\"name\":\"ladw10-392\"},{\"id\":53,\"name\":\"N.A\"},{\"id\":54,\"name\":\"ladw10-403\"},{\"id\":55,\"name\":\"ladjit641\"},{\"id\":56,\"name\":\"ladjit317\"},{\"id\":57,\"name\":\"ladjit359\"},{\"id\":58,\"name\":\"ladjit265\"},{\"id\":59,\"name\":\"ladjit547\"},{\"id\":60,\"name\":\"ladjit664\"},{\"id\":61,\"name\":\"ladjit788\"},{\"id\":62,\"name\":\"ladw10-512\"},{\"id\":63,\"name\":\"ladjit815\"},{\"id\":64,\"name\":\"ladj816\"},{\"id\":65,\"name\":\"ladjit798\"},{\"id\":66,\"name\":\"ladjit804\"},{\"id\":67,\"name\":\"ladjit304\"},{\"id\":68,\"name\":\"ladjit242\"},{\"id\":69,\"name\":\"ladjit777\"},{\"id\":70,\"name\":\"ladjit817\"},{\"id\":71,\"name\":\"ladw10-683\"},{\"id\":72,\"name\":\"ladjit819\"},{\"id\":73,\"name\":\"ladjit810\"},{\"id\":74,\"name\":\"ladjit814\"},{\"id\":75,\"name\":\"ladjit811\"},{\"id\":76,\"name\":\"ladjit812\"},{\"id\":77,\"name\":\"ladjit243\"},{\"id\":78,\"name\":\"ladjit673\"},{\"id\":79,\"name\":\"ladjit310\"},{\"id\":80,\"name\":\"ladjit656\"},{\"id\":81,\"name\":\"ladjit787\"},{\"id\":82,\"name\":\"ladj1970\"},{\"id\":83,\"name\":\"ladj1971\"}]}"
+      },
+      {
+        "id": "dropdown_mktyztxc",
+        "title": "TTM/PDU IP",
+        "type": "dropdown",
+        "settings_str": "{\"labels\":[{\"name\":\"143.185.137.64\",\"id\":1},{\"name\":\"143.185.137.67\",\"id\":2},{\"name\":\"143.185.137.108\",\"id\":3},{\"name\":\"143.185.165.95\",\"id\":4},{\"name\":\"143.185.143.79\",\"id\":5},{\"name\":\"143.185.151.165\",\"id\":6},{\"name\":\"143.185.141.155\",\"id\":7},{\"name\":\"143.185.141.160\",\"id\":8},{\"name\":\"143.185.141.44\",\"id\":9},{\"name\":\"143.185.142.167\",\"id\":10},{\"name\":\"143.185.165.85\",\"id\":11},{\"name\":\"PDU 143.185.141.29\",\"id\":12},{\"name\":\"143.185.137.184\",\"id\":13},{\"name\":\"143.185.165.101\",\"id\":14},{\"name\":\"143.185.140.106\",\"id\":15},{\"name\":\"143.185.141.86\",\"id\":16},{\"name\":\"143.185.141.84\",\"id\":17},{\"id\":18,\"name\":\"143.185.151.42\"},{\"id\":19,\"name\":\"143.185.151.153\"},{\"id\":20,\"name\":\"143.185.151.39\"},{\"id\":21,\"name\":\"\"},{\"id\":22,\"name\":\"143.185.151.178\"},{\"id\":23,\"name\":\"143.185.141.108\"},{\"id\":24,\"name\":\"143.185.141.68\"},{\"id\":25,\"name\":\"143.185.141.203\"},{\"id\":26,\"name\":\"143.185.151.36\"},{\"id\":27,\"name\":\"143.185.151.52\"},{\"id\":28,\"name\":\"N/A\"},{\"id\":29,\"name\":\"143.185.151.151\"},{\"id\":30,\"name\":\"143.185.151.79\"},{\"id\":31,\"name\":\"10.12.172.15\"},{\"id\":32,\"name\":\"10.12.172.21\"},{\"id\":33,\"name\":\"143.185.141.85\"},{\"id\":34,\"name\":\"143.185.143.147\"},{\"id\":35,\"name\":\"143.185.56.69\"},{\"id\":36,\"name\":\"143.185.143.100\"},{\"id\":37,\"name\":\"143.185.143.72\"},{\"id\":38,\"name\":\"143.185.58.39\"},{\"id\":39,\"name\":\"143.185.151.168\"},{\"id\":40,\"name\":\"143.185.151.65\"},{\"id\":41,\"name\":\"10.12.172.59\"},{\"id\":42,\"name\":\"10.12.172.61\"},{\"id\":43,\"name\":\"10.12.172.20\"},{\"id\":44,\"name\":\"TTM- 10.12.232.179\"},{\"id\":45,\"name\":\"TTM- 10.12.232.175\"},{\"id\":46,\"name\":\"10.12.173.252\"},{\"id\":47,\"name\":\"10.12.173.197\"},{\"id\":48,\"name\":\"10.12.173.6\"},{\"id\":49,\"name\":\"10.12.173.251\"},{\"id\":50,\"name\":\"143.185.151.108\"},{\"id\":51,\"name\":\"TTM- 10.12.233.139\"},{\"id\":52,\"name\":\"TTM- 10.12.232.81\"},{\"id\":53,\"name\":\"10.12.172.47\"},{\"id\":54,\"name\":\"10.12.173.253\"},{\"id\":55,\"name\":\"10.12.173.182\"},{\"id\":56,\"name\":\"TTM- 10.12.232.79\"},{\"id\":57,\"name\":\"TTM- 10.12.233.105\"},{\"id\":58,\"name\":\"TTM- 10.12.233.98\"},{\"id\":59,\"name\":\"TTM - 10.12.232.136\"},{\"id\":60,\"name\":\"ladj816\"}]}"
+      },
+      {
+        "id": "dropdown_mktyffn8",
+        "title": "Port",
+        "type": "dropdown",
+        "settings_str": "{\"labels\":[{\"name\":\"port 17\",\"id\":1},{\"name\":\"host:9\",\"id\":2},{\"name\":\"dekel:17\",\"id\":3},{\"name\":\"host 27\",\"id\":4},{\"name\":\"dekel:22\",\"id\":5},{\"name\":\"Host: 22 Dekel: 27\",\"id\":6},{\"name\":\"Port 10\",\"id\":7},{\"name\":\"Host: 17 dekel:11\",\"id\":8},{\"name\":\"host:17 dekel :22\",\"id\":9},{\"name\":\"port 9\",\"id\":10},{\"name\":\"host: 27 dekel: 10\",\"id\":11},{\"name\":\"host: 22 dekel: 17\",\"id\":12},{\"name\":\"port 11\",\"id\":13},{\"name\":\"Port 22\",\"id\":14},{\"name\":\"port 17 - dekel port 22\",\"id\":15},{\"name\":\"host:11\",\"id\":16},{\"name\":\"dekel: 10\",\"id\":17},{\"name\":\"port 22\",\"id\":18},{\"name\":\"host: 11\",\"id\":19},{\"name\":\"port  9\",\"id\":20},{\"name\":\"port 27\",\"id\":21},{\"name\":\"port 2\",\"id\":22},{\"name\":\"host:27 Dekel: 10\",\"id\":23},{\"name\":\"Port 27\",\"id\":24},{\"name\":\"port 10\",\"id\":25},{\"name\":\"host port  22\",\"id\":26},{\"name\":\"host: 22 dekel:11\",\"id\":27},{\"name\":\"Host: 11 dekel: 10\",\"id\":28},{\"name\":\"GPIO_9: Host GPIO_27: Dekel\",\"id\":29},{\"name\":\"host: 22 dekel:27\",\"id\":30},{\"name\":\"GPIO_11: Host\",\"id\":31},{\"name\":\"host:27 dekel: 10\",\"id\":32},{\"name\":\"host:10 dekel :11\",\"id\":33},{\"name\":\"GPIO_22: Dekel GPIO_10: Host\",\"id\":34},{\"name\":\"host: 17 dekel : 9\",\"id\":35},{\"name\":\"host: port 17 dekel:9\",\"id\":36},{\"name\":\"host: 22\",\"id\":37},{\"name\":\"port 7\",\"id\":38},{\"name\":\"host: 17   RP: 22\",\"id\":39},{\"id\":40,\"name\":\"host :22 dekel:27\"},{\"id\":41,\"name\":\"host: 17 dekel :10\"},{\"id\":42,\"name\":\"port: 22\"},{\"id\":43,\"name\":\"dekel: 27\"},{\"id\":44,\"name\":\"port: 17\"},{\"id\":45,\"name\":\"host:27 Dekel: 9\"},{\"id\":46,\"name\":\"host:22 dekel :10\"},{\"id\":47,\"name\":\"GPIO_9: Host \\nGPIO_10: Dekel\"},{\"id\":48,\"name\":\"GPIO_27: Host\"},{\"id\":49,\"name\":\"Host: 17 Dekel: 22\"},{\"id\":50,\"name\":\"GPIO_9: Host \\nGPIO_10: Dekel\"},{\"id\":51,\"name\":\"\"},{\"id\":52,\"name\":\"port 9 Dekel: 22\"},{\"id\":53,\"name\":\"Host: 17 Dekel: 27\"},{\"id\":54,\"name\":\"dekel:10\"},{\"id\":55,\"name\":\"N/A\"},{\"id\":56,\"name\":\"host: 27 dekel1:22 dekel2: 17\"},{\"id\":57,\"name\":\"host: 27 dekel : 11\"},{\"id\":58,\"name\":\"port  27\"},{\"id\":59,\"name\":\"host: 17 dekel : 11\"},{\"id\":60,\"name\":\"host:22\"},{\"id\":61,\"name\":\"Host: 10 Dekel 9\"},{\"id\":62,\"name\":\"Host: 11\"},{\"id\":63,\"name\":\"host: 17 dekel : 27\"},{\"id\":64,\"name\":\"host3 dekel:5\"},{\"id\":65,\"name\":\"host:4\"},{\"id\":66,\"name\":\"host:6 dekel:7\"},{\"id\":67,\"name\":\"host:3\\ndekel:2\"},{\"id\":68,\"name\":\"host:6\\ndekel:5\"},{\"id\":69,\"name\":\"host:7\"},{\"id\":70,\"name\":\"host: 9 Dekel 10\"},{\"id\":71,\"name\":\"Host: 27 Dekel 22\"},{\"id\":72,\"name\":\"Dekel: 27 Host: 22\"},{\"id\":73,\"name\":\"DEKEL :9    HOST: 22\"},{\"id\":74,\"name\":\"Dekel: 27 Host:17\"},{\"id\":75,\"name\":\"host:27 dekel: 22\"},{\"id\":76,\"name\":\"host:17\"},{\"id\":77,\"name\":\"host:27\"},{\"id\":78,\"name\":\"host:9 dekel:17\"},{\"id\":79,\"name\":\"host:10\"},{\"id\":80,\"name\":\"host:11\\ndekel:13\"},{\"id\":81,\"name\":\"host:9\\ndekel:14\"},{\"id\":82,\"name\":\"host:4\\ndekel:6\"},{\"id\":83,\"name\":\"host:5\"},{\"id\":84,\"name\":\"host:7\\nDekel:9\"},{\"id\":85,\"name\":\"host:2\\ndekel:1\"},{\"id\":86,\"name\":\"host:3\"},{\"id\":87,\"name\":\"host:6 dekel:5\"},{\"id\":88,\"name\":\"host:8\"},{\"id\":89,\"name\":\"host11\"},{\"id\":90,\"name\":\"dekel:9\"},{\"id\":91,\"name\":\"Dekel:1\"},{\"id\":92,\"name\":\"RP: 3\"},{\"id\":93,\"name\":\"host:2\"},{\"id\":94,\"name\":\"host:2\\ndekel:1\"},{\"id\":95,\"name\":\"host:6\\ndekel:5\"},{\"id\":96,\"name\":\"host:1\\ndekel:2\"},{\"id\":97,\"name\":\"host:5\\ndekel:4\"},{\"id\":98,\"name\":\"host:6 \\ndekel:7\"},{\"id\":99,\"name\":\"host:7 dekel 6\"},{\"id\":100,\"name\":\"host:2 dekel:1\"},{\"id\":101,\"name\":\"GPIO_17: Host GPIO_9: Dekel GPU Port 11\"},{\"id\":102,\"name\":\"host: 17\"},{\"id\":103,\"name\":\"host: 99\"},{\"id\":104,\"name\":\"host: 9\"},{\"id\":105,\"name\":\"host:5\\ndekel:4\"},{\"id\":106,\"name\":\"host:4 dekel:5\"},{\"id\":107,\"name\":\"host:2\\ndekel:2\"},{\"id\":108,\"name\":\"dekel:11\"},{\"id\":109,\"name\":\"host12\"},{\"id\":110,\"name\":\"dekel:23\"},{\"id\":111,\"name\":\"host: 10\"},{\"id\":112,\"name\":\"host: 27\"},{\"id\":113,\"name\":\"LP : 11\"},{\"id\":114,\"name\":\"10.12.172.59\"}]}"
+      },
+      {
+        "id": "text_mkwsk3r7",
+        "title": "0S",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkwsjvdd",
+        "title": "Kernel",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkws5wtx",
+        "title": "CPU(s)",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkws6d4d",
+        "title": "BIOS",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "text_mkwsytf5",
+        "title": "DEKEL S/N",
+        "type": "text",
+        "settings_str": "{}"
+      },
+      {
+        "id": "color_mkwwthzs",
+        "title": "Priority",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":1,\"1\":19,\"19\":0},\"deactivated_labels\":[],\"labels\":{\"0\":\"done\",\"1\":\"WIP\",\"2\":\"wip\",\"3\":\"Unnamed\",\"4\":\"done(Performance)\",\"6\":\"23\",\"7\":\"24\"},\"labels_colors\":{\"0\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"1\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+      },
+      {
+        "id": "color_mkwwk2t6",
+        "title": "Topology",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"TOPO1\",\"1\":\"TOPO_1\",\"2\":\"TOPO7\",\"3\":\"TOPO3\",\"4\":\"TOPO_9\",\"6\":\"TOPO_7\",\"7\":\"TOPO9\",\"8\":\"TOPO11\",\"9\":\"TOPO4\",\"10\":\"TOPO_13\",\"11\":\"TOPO_4\",\"12\":\"TOPO_11\",\"13\":\"TOPO13\",\"14\":\"TOPO_3\",\"15\":\"TOPO_4 now it topo1\",\"16\":\"temporary\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"9\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"13\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"},\"14\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"15\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"}}}"
+      },
+      {
+        "id": "color_mkwwcnct",
+        "title": "Activity",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"1\":152,\"152\":1},\"labels\":{\"0\":\"BKC\",\"1\":\"Regression\",\"2\":\"Eth Power Management\",\"3\":\"LAN, CP, interrupts, Mega LAN\",\"4\":\"Cross & Concurrency\",\"6\":\"Tools\\\\SV Driver\",\"7\":\"Performance\",\"8\":\"PCIe\",\"9\":\"QoS\",\"10\":\"SMF_Ext. Devices emulation\",\"11\":\"NVMe\",\"12\":\"RDMA\",\"13\":\"LaaS Dev + Flow runner CI (DevOps)\",\"14\":\"SMF_Resets\",\"15\":\"SMF_Manageability\",\"16\":\"SV/SW driver - NVME Dev\",\"17\":\"Denver CI\",\"18\":\"Ext. Devices emulation\",\"19\":\"ICE\",\"101\":\"Security + fuses\",\"102\":\"SMF_DFD\",\"103\":\"SMF_ACCL\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#bda8f9\",\"border\":\"#bda8f9\",\"var_name\":\"light_magic\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"9\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"13\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"},\"14\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"15\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"17\":{\"color\":\"#757575\",\"border\":\"#707070\",\"var_name\":\"trolley-grey\"},\"18\":{\"color\":\"#7f5347\",\"border\":\"#70493e\",\"var_name\":\"brown\"},\"19\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"101\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"},\"102\":{\"color\":\"#faa1f1\",\"border\":\"#faa1f1\",\"var_name\":\"bubble\"},\"103\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"}}}"
+      },
+      {
+        "id": "color_mkwwhwn1",
+        "title": "Location",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"SV_LAB T-27\",\"1\":\"EV Lab floor 0\",\"2\":\"FRC-282\",\"3\":\"CCD Lab Floor 0\",\"4\":\"SV_LAB T-33\",\"6\":\"SV_LAB T-10\",\"7\":\"Robot\",\"8\":\"FRC 282.5\",\"9\":\"SV_LAB T-8\",\"10\":\"SV_LAB T-25\",\"11\":\"SV_LAB T-29\",\"12\":\"SV_LAB T-34\",\"13\":\"SV_LAB T-32\",\"14\":\"LM ATE\",\"15\":\"FRC-277\",\"16\":\"FRC-280\",\"17\":\"FRC-279\",\"18\":\"FRC -276\",\"19\":\"DLC 251\",\"101\":\"DLC 239\",\"102\":\"LM-DEBUG\",\"103\":\"DLC 240\",\"104\":\"DLC- 247\",\"105\":\"LM\",\"106\":\"SV_LAB T-26\",\"107\":\"SV_LAB T-28\",\"108\":\"SV_LAB T-02\",\"109\":\"SV_LAB T-01\",\"110\":\"CCD lab floor 0\",\"151\":\"DLC 248\",\"152\":\"LM DEBUG 2\",\"153\":\"FRC-287\",\"154\":\"FRC-rack 271\",\"155\":\"SV_LAB T-04\",\"156\":\"DLC 253\",\"157\":\"DLC - 249\",\"158\":\"FRC 281\",\"159\":\"FRC 276\",\"160\":\"FRC 285\"},\"labels_positions_v2\":{\"0\":5,\"1\":13,\"2\":11,\"3\":12,\"4\":9,\"5\":22,\"6\":2,\"7\":14,\"8\":15,\"9\":1,\"10\":3,\"11\":7,\"12\":10,\"13\":8,\"14\":16,\"15\":17,\"16\":18,\"17\":19,\"18\":20,\"19\":21,\"101\":23,\"102\":24,\"103\":29,\"104\":30,\"105\":25,\"106\":4,\"107\":6,\"108\":26,\"109\":27,\"110\":28,\"151\":31,\"152\":35,\"153\":37,\"154\":38,\"155\":0,\"156\":33,\"157\":32,\"158\":34,\"159\":39,\"160\":36},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"9\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"13\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"},\"14\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"15\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"17\":{\"color\":\"#757575\",\"border\":\"#707070\",\"var_name\":\"trolley-grey\"},\"18\":{\"color\":\"#7f5347\",\"border\":\"#70493e\",\"var_name\":\"brown\"},\"19\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"101\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"},\"102\":{\"color\":\"#faa1f1\",\"border\":\"#faa1f1\",\"var_name\":\"bubble\"},\"103\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"},\"104\":{\"color\":\"#7e3b8a\",\"border\":\"#7e3b8a\",\"var_name\":\"berry\"},\"105\":{\"color\":\"#9aadbd\",\"border\":\"#9aadbd\",\"var_name\":\"winter\"},\"106\":{\"color\":\"#74afcc\",\"border\":\"#74afcc\",\"var_name\":\"river\"},\"107\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"109\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"110\":{\"color\":\"#401694\",\"border\":\"#401694\",\"var_name\":\"dark_indigo\"},\"151\":{\"color\":\"#563e3e\",\"border\":\"#563e3e\",\"var_name\":\"pecan\"},\"152\":{\"color\":\"#bda8f9\",\"border\":\"#bda8f9\",\"var_name\":\"light_magic\"},\"153\":{\"color\":\"#216edf\",\"border\":\"#216edf\",\"var_name\":\"sky\"},\"154\":{\"color\":\"#a9bee8\",\"border\":\"#a9bee8\",\"var_name\":\"cold_blue\"},\"155\":{\"color\":\"#e484bd\",\"border\":\"#e484bd\",\"var_name\":\"kids\"},\"156\":{\"color\":\"#9d99b9\",\"border\":\"#9d99b9\",\"var_name\":\"purple_gray\"},\"157\":{\"color\":\"#bca58a\",\"border\":\"#bca58a\",\"var_name\":\"corona\"},\"158\":{\"color\":\"#a1e3f6\",\"border\":\"#a1e3f6\",\"var_name\":\"sail\"},\"159\":{\"color\":\"#cd9282\",\"border\":\"#cd9282\",\"var_name\":\"old_rose\"},\"160\":{\"color\":\"#175a63\",\"border\":\"#175a63\",\"var_name\":\"eden\"}}}"
+      },
+      {
+        "id": "color_mkwwk1ek",
+        "title": "X12/X13",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"X13DEI\",\"1\":\"N/A\",\"2\":\"x13DEI\",\"3\":\"X13SEI-F\",\"4\":\"X13DAI-N\",\"6\":\"X12DPi-NT6\",\"7\":\"DUT\",\"8\":\"X12dpi-NT6\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"}}}"
+      },
+      {
+        "id": "color_mkwwdxz3",
+        "title": "Configuration",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"1X400\",\"1\":\"2X400\",\"2\":\"No Cablre\\\\Dekel\",\"3\":\"2X200\",\"4\":\"1X200\",\"5\":\"\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"3\":4,\"4\":5,\"5\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+      },
+      {
+        "id": "color_mkwwkha2",
+        "title": "Cable Type",
+        "type": "status",
+        "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"200GB\",\"1\":\"400GB\",\"2\":\"100GB\",\"3\":\"\",\"4\":\"\",\"5\":\"No Cable\\\\Dekel\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"3\":4,\"4\":5,\"5\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+      }
+    ],
+    "items": [
+      {
+        "id": "18198387120",
+        "name": "1",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:23Z",
+        "updated_at": "2025-10-20T12:13:08Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3050",
+            "value": "\"ladh3050\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:16.901Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-20T12:08:04.901Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:22.713Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-20T12:09:13.257Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-282",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.080Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:10.734Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-618",
+            "value": "{\"ids\":[26]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.42",
+            "value": "{\"ids\":[18]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host :22 dekel:27",
+            "value": "{\"ids\":[40]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "68",
+            "value": "\"68\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401436",
+            "value": "\"755L4Y3401436\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.359Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387275",
+        "name": "2",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:24Z",
+        "updated_at": "2025-10-21T06:38:58Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3071",
+            "value": "\"ladh3071\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.513Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "2X400",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:38:58.432Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:23.461Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:38:18.852Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-282",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.405Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:11.306Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-596",
+            "value": "{\"ids\":[28]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.153",
+            "value": "{\"ids\":[19]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port: 22, dekel: 27",
+            "value": "{\"ids\":[42,43]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "8",
+            "value": "\"8\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "internal(4CH)",
+            "value": "\"internal(4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401487",
+            "value": "\"755L4Y3401487\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.749Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387413",
+        "name": "3",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:25Z",
+        "updated_at": "2025-10-21T06:39:13Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3084",
+            "value": "\"ladh3084\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.756Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:39:09.819Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:23.888Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:39:13.391Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-277",
+            "value": "{\"index\":15,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.621Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:11.567Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-493",
+            "value": "{\"ids\":[30]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.39",
+            "value": "{\"ids\":[20]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host:27 Dekel: 9",
+            "value": "{\"ids\":[45]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "9 077",
+            "value": "\"9 077\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75M08F5300910",
+            "value": "\"75M08F5300910\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "WIP",
+            "value": "\"WIP\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.368Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387535",
+        "name": "4",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:25Z",
+        "updated_at": "2025-10-21T06:48:52Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2963",
+            "value": "\"ladh2963\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO3",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.984Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:48:50.894Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:24.221Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:48:52.753Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "rotatable",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-280",
+            "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.798Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:11.874Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-680",
+            "value": "{\"ids\":[32]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.178",
+            "value": "{\"ids\":[22]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": "{\"ids\":[]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "209",
+            "value": "\"209\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301336",
+            "value": "\"75075EE301336\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.012Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387719",
+        "name": "5",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:26Z",
+        "updated_at": "2025-10-19T13:02:17Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO4",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.696Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:24.889Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "N/A",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:17.376Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-678",
+            "value": "{\"ids\":[35]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "WIP",
+            "value": "\"WIP\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "wip",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.490Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387894",
+        "name": "6",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:28Z",
+        "updated_at": "2025-10-21T06:55:42Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3054",
+            "value": "\"ladh3054\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO7",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.920Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "No Cablre\\Dekel",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-21T06:55:42.564Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:25.137Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "MH",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "DLC 251",
+            "value": "{\"index\":19,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:28.498Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:17.650Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-589",
+            "value": "{\"ids\":[36]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.141.108",
+            "value": "{\"ids\":[23]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port 9 Dekel: 22",
+            "value": "{\"ids\":[52]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_VF37_V26_ww06",
+            "value": "\"Golden_Image_LABOS_VF37_V26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Performance",
+            "value": "\"Performance\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "1024",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA 250",
+            "value": "\"Dekel FabA 250\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301314",
+            "value": "\"75075EE301314\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done(Performance)",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.763Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198388182",
+        "name": "7",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:29Z",
+        "updated_at": "2025-10-21T06:56:15Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3043",
+            "value": "\"ladh3043\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO7",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:19.141Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "2X400",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:56:13.325Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:25.347Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:56:15.085Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "MH",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "DLC 239",
+            "value": "{\"index\":101,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:28.702Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:17.955Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-692",
+            "value": "{\"ids\":[38]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.141.203",
+            "value": "{\"ids\":[25]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port 27",
+            "value": "{\"ids\":[21]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "64",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA  110",
+            "value": "\"Dekel FabA  110\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301170",
+            "value": "\"75075EE301170\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "V",
+            "value": "\"V\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.994Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387256",
+        "name": "8",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:24Z",
+        "updated_at": "2025-10-19T13:02:11Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO9",
+            "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.283Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:23.173Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "MH",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:11.046Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "N/A",
+            "value": "{\"ids\":[55]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "lno dekel",
+            "value": "\"lno dekel\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "wip",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.141Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387532",
+        "name": "9",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:25Z",
+        "updated_at": "2025-10-21T12:15:51Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2896",
+            "value": "\"ladh2896\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO11",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.245Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T12:15:50.670Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:24.440Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T12:15:51.942Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-279",
+            "value": "{\"index\":17,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.989Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "LP",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X12DPi-NT6",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:16.887Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-337/ladw10-385",
+            "value": "{\"ids\":[39]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.36",
+            "value": "{\"ids\":[26]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host: 27 dekel1:22 dekel2: 17",
+            "value": "{\"ids\":[56]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "1024",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "dekel 132/dekel 89",
+            "value": "\"dekel 132/dekel 89\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301163",
+            "value": "\"75075EE301163\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "done",
+            "value": "\"done\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "wip",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.252Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198387593",
+        "name": "10",
+        "state": "active",
+        "created_at": "2025-10-16T08:21:26Z",
+        "updated_at": "2025-10-19T13:02:17Z",
+        "group": {
+          "id": "group_mkws4j1q",
+          "title": "Vishnia, Adi - Regression"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2993",
+            "value": "\"ladh2993\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO13",
+            "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.472Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Regression",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:24.683Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "N/A",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vishnia, Adi",
+            "value": "\"Vishnia, Adi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC -276",
+            "value": "{\"index\":18,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:28.251Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:17.154Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-599",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "WIP",
+            "value": "\"WIP\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "wip",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.696Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469121",
+        "name": "1",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:53Z",
+        "updated_at": "2025-10-21T06:40:02Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2238",
+            "value": "\"ladh2238\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.355Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:39:59.278Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Tools\\SV Driver",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:28.566Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:40:01.845Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "Rotatble",
+            "value": "{\"ids\":[9]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC 281",
+            "value": "{\"index\":158,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:30.167Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:13.065Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-334",
+            "value": "{\"ids\":[41]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.52",
+            "value": "{\"ids\":[27]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host: 17 dekel : 11",
+            "value": "{\"ids\":[59]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "intel(R) Xeon(R) Gold 6430",
+            "value": "\"intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "130",
+            "value": "\"130\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401116",
+            "value": "\"755L4Y3401116\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:22.768Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469170",
+        "name": "2",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:54Z",
+        "updated_at": "2025-10-19T13:02:21Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3070",
+            "value": "\"ladh3070\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "temporary",
+            "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.560Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Tools\\SV Driver",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:28.995Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC 276",
+            "value": "{\"index\":159,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.155Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X12dpi-NT6",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:20.905Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "N/A",
+            "value": "{\"ids\":[16]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "N/A",
+            "value": "{\"ids\":[28]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "N/A",
+            "value": "{\"ids\":[55]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "3.4 MEV",
+            "value": "\"3.4 MEV\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Platinum 8170 CPU",
+            "value": "\"Intel(R) Xeon(R) Platinum 8170 CPU\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:22.982Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469197",
+        "name": "3",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:54Z",
+        "updated_at": "2025-10-21T06:40:53Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3110",
+            "value": "\"ladh3110\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.780Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "No Cablre\\Dekel",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-21T06:40:53.619Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "SV/SW driver - NVME Dev",
+            "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:29.232Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-282",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.465Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DAI-N",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:21.144Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "lad10-682",
+            "value": "{\"ids\":[42]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.151",
+            "value": "{\"ids\":[29]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "Host: 10 Dekel 9",
+            "value": "{\"ids\":[61]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "2.3",
+            "value": "\"2.3\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Platinum 8474C",
+            "value": "\"Intel(R) Xeon(R) Platinum 8474C\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "17",
+            "value": "\"17\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401344",
+            "value": "\"755L4Y3401344\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:23.218Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469237",
+        "name": "4",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:55Z",
+        "updated_at": "2025-10-21T06:42:08Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3030",
+            "value": "\"ladh3030\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:17.982Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "No Cablre\\Dekel",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-21T06:42:06.590Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Denver CI",
+            "value": "{\"index\":17,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:29.435Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-10-21T06:42:08.728Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC 285",
+            "value": "{\"index\":160,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.691Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:21.391Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-441",
+            "value": "{\"ids\":[43]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.151.79",
+            "value": "{\"ids\":[30]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host: 17 dekel : 27",
+            "value": "{\"ids\":[63]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "intel(R) Xeon(R) Gold 6430",
+            "value": "\"intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "113",
+            "value": "\"113\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401454",
+            "value": "\"755L4Y3401454\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:23.497Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469282",
+        "name": "5",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:55Z",
+        "updated_at": "2025-10-21T07:02:43Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladj1987",
+            "value": "\"ladj1987\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO3",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.188Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Tools\\SV Driver",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:29.660Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "Rotatble",
+            "value": "{\"ids\":[9]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "SV_LAB T-8",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-21T07:00:18.259Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DAI-N",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:21.659Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladjit818",
+            "value": "{\"ids\":[44]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "10.12.172.15",
+            "value": "{\"ids\":[31]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host3 dekel:5",
+            "value": "{\"ids\":[64]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "1.1",
+            "value": "\"1.1\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "N/A",
+            "value": "\"N/A\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:23.715Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469331",
+        "name": "6",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:57Z",
+        "updated_at": "2025-10-21T06:41:36Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladj1911",
+            "value": "\"ladj1911\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO_1",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.388Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "LaaS Dev + Flow runner CI (DevOps)",
+            "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:29.881Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-21T06:41:36.328Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "SV_LAB T-8",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:27.965Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:13.315Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladjit379",
+            "value": "{\"ids\":[46]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "10.12.172.21",
+            "value": "{\"ids\":[32]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": "{\"ids\":[]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA 239",
+            "value": "\"Dekel FabA 239\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 Internal (4CH)",
+            "value": "\"A0 Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401547",
+            "value": "\"755L4Y3401547\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:23.923Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469368",
+        "name": "7",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:57Z",
+        "updated_at": "2025-10-21T06:41:39Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladj1909",
+            "value": "\"ladj1909\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO_1",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:20.785Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "LaaS Dev + Flow runner CI (DevOps)",
+            "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:25.061Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-21T06:41:39.327Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "SV_LAB T-8",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:30.040Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:13.533Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladjit702",
+            "value": "{\"ids\":[47]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "10.12.172.21",
+            "value": "{\"ids\":[32]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": "{\"ids\":[]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA 238",
+            "value": "\"Dekel FabA 238\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 Internal (4CH)",
+            "value": "\"A0 Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75KV766600030",
+            "value": "\"75KV766600030\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.309Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198469403",
+        "name": "8",
+        "state": "active",
+        "created_at": "2025-10-16T08:37:58Z",
+        "updated_at": "2025-10-21T06:55:04Z",
+        "group": {
+          "id": "group_mkwsbx0z",
+          "title": "Vaknin, Avi"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3098",
+            "value": "\"ladh3098\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO7",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:20.995Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X200",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-21T06:55:01.497Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Tools\\SV Driver",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:25.402Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "200GB",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:55:04.729Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "MH",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Vaknin, Avi",
+            "value": "\"Vaknin, Avi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "DLC- 247",
+            "value": "{\"index\":104,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:30.247Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DAI-N",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:13.735Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-691",
+            "value": "{\"ids\":[48]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.141.85",
+            "value": "{\"ids\":[33]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port 10",
+            "value": "{\"ids\":[25]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "1.1",
+            "value": "\"1.1\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "109",
+            "value": "\"109\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401470",
+            "value": "\"755L4Y3401470\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.484Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437309",
+        "name": "1",
+        "state": "active",
+        "created_at": "2025-10-16T08:30:57Z",
+        "updated_at": "2025-10-21T06:47:08Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2910",
+            "value": "\"ladh2910\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:19.365Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "No Cablre\\Dekel",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-21T06:47:06.079Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "PCIe",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:25.575Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-10-21T06:47:08.407Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Goldneberg, Yaron",
+            "value": "\"Goldneberg, Yaron\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "LM-DEBUG",
+            "value": "{\"index\":102,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:29.000Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:10.737Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-577",
+            "value": "{\"ids\":[24]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.137.64",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host: 22 dekel: 17",
+            "value": "{\"ids\":[12]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "2.5",
+            "value": "\"2.5\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA 133",
+            "value": "\"Dekel FabA 133\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301114",
+            "value": "\"75075EE301114\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:16.901Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437339",
+        "name": "2",
+        "state": "active",
+        "created_at": "2025-10-16T08:30:58Z",
+        "updated_at": "2025-10-21T06:53:54Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2819",
+            "value": "\"ladh2819\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO7",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:19.796Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:53:45.958Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "PCIe",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:22.737Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T06:53:49.108Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "SH",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Losev, Sergey",
+            "value": "\"Losev, Sergey\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "LM ATE",
+            "value": "{\"index\":14,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:29.396Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:11.333Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-643",
+            "value": "{\"ids\":[25]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.137.67",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host port  22, dekel:17",
+            "value": "{\"ids\":[26,3]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_VF37_V26_ww06",
+            "value": "\"Golden_Image_LABOS_VF37_V26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA 132",
+            "value": "\"Dekel FabA 132\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "A0 ES1 Q7CV - INT",
+            "value": "\"A0 ES1 Q7CV - INT\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "75075EE301486",
+            "value": "\"75075EE301486\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.094Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437488",
+        "name": "3",
+        "state": "active",
+        "created_at": "2025-10-16T08:31:01Z",
+        "updated_at": "2025-10-19T13:02:19Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh3022",
+            "value": "\"ladh3022\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO9",
+            "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:20.533Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "PCIe",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:23.860Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Losev, Sergey",
+            "value": "\"Losev, Sergey\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT3",
+            "value": "{\"ids\":[5]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:19.091Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port 10",
+            "value": "{\"ids\":[25]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v26_ww06",
+            "value": "\"Golden_Image_LABOS_vF37_v26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "64",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "WIP",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:17.287Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437528",
+        "name": "4",
+        "state": "active",
+        "created_at": "2025-10-16T08:31:02Z",
+        "updated_at": "2025-10-21T12:16:16Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2661",
+            "value": "\"ladh2661\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO11",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.356Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "1X400",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T12:16:15.174Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "PCIe",
+            "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:27.361Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "400GB",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-21T12:16:17.342Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Losev, Sergey",
+            "value": "\"Losev, Sergey\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "LM DEBUG 2",
+            "value": "{\"index\":152,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:28.797Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "LP",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X12DPi-NT6",
+            "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:12.015Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.137.184",
+            "value": "{\"ids\":[13]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host: 17   RP: 22",
+            "value": "{\"ids\":[39]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_VF37_V26_ww06",
+            "value": "\"Golden_Image_LABOS_VF37_V26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "1.1b",
+            "value": "\"1.1b\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Platinum 8380 2.30GHz",
+            "value": "\"Intel(R) Xeon(R) Platinum 8380 2.30GHz\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "wip",
+            "value": "\"wip\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "WIP",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:20.241Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437553",
+        "name": "5",
+        "state": "active",
+        "created_at": "2025-10-16T08:31:02Z",
+        "updated_at": "2025-10-21T06:44:33Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2948",
+            "value": "\"ladh2948\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO1",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:18.807Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "2X200",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-21T06:44:33.559Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Cross & Concurrency",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:27.834Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "200GB",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:44:05.361Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "rotatable",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Goldneberg, Yaron",
+            "value": "\"Goldneberg, Yaron\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "FRC-rack 271",
+            "value": "{\"index\":154,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:29.240Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:12.481Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-616",
+            "value": "{\"ids\":[20]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.141.84",
+            "value": "{\"ids\":[17]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "host:17 dekel :22",
+            "value": "{\"ids\":[9]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_vF37_v23_ww02",
+            "value": "\"Golden_Image_LABOS_vF37_v23_ww02\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "T20240802010013",
+            "value": "\"T20240802010013\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "128GB",
+            "value": "{\"ids\":[0]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "Dekel FabA  117",
+            "value": "\"Dekel FabA  117\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401386",
+            "value": "\"755L4Y3401386\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:20.773Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437626",
+        "name": "6",
+        "state": "active",
+        "created_at": "2025-10-16T08:31:03Z",
+        "updated_at": "2025-10-19T13:02:20Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "need a name",
+            "value": "\"need a name\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO4",
+            "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:19.438Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Cross & Concurrency",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:24.661Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "No Cable\\Dekel",
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Goldneberg, Yaron",
+            "value": "\"Goldneberg, Yaron\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": null,
+            "value": null,
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:20.398Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-616",
+            "value": "{\"ids\":[20]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": null,
+            "value": null,
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "WIP",
+            "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:21.536Z\"}",
+            "type": "status"
+          }
+        ]
+      },
+      {
+        "id": "18198437696",
+        "name": "7",
+        "state": "active",
+        "created_at": "2025-10-16T08:31:04Z",
+        "updated_at": "2025-10-21T06:54:00Z",
+        "group": {
+          "id": "group_mkwsqnrv",
+          "title": "Goldneberg, Yaron"
+        },
+        "column_values": [
+          {
+            "id": "subtasks_mkt4ckcb",
+            "text": null,
+            "value": null,
+            "type": "subtasks"
+          },
+          {
+            "id": "text_mktyf2zy",
+            "text": "ladh2987",
+            "value": "\"ladh2987\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwk2t6",
+            "text": "TOPO7",
+            "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-10-19T12:59:16.829Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwdxz3",
+            "text": "2X200",
+            "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-10-21T06:53:13.161Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwcnct",
+            "text": "Cross & Concurrency",
+            "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-10-19T13:00:28.038Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "color_mkwwkha2",
+            "text": "200GB",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-21T06:53:16.217Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktym0j5",
+            "text": "MH",
+            "value": "{\"ids\":[6]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mktyh8k0",
+            "text": "Tal Mizrahi",
+            "value": "\"Tal Mizrahi\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwhwn1",
+            "text": "DLC 253",
+            "value": "{\"index\":156,\"post_id\":null,\"changed_at\":\"2025-10-19T13:01:29.490Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mkty6vha",
+            "text": "DUT0",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "color_mkwwk1ek",
+            "text": "X13DEI",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T13:02:12.676Z\"}",
+            "type": "status"
+          },
+          {
+            "id": "dropdown_mktyg7zj",
+            "text": "ladw10-573",
+            "value": "{\"ids\":[23]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyztxc",
+            "text": "143.185.141.155",
+            "value": "{\"ids\":[7]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "dropdown_mktyffn8",
+            "text": "port 17",
+            "value": "{\"ids\":[1]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsk3r7",
+            "text": "Golden_Image_LABOS_VF37_V26_ww06",
+            "value": "\"Golden_Image_LABOS_VF37_V26_ww06\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkwsjvdd",
+            "text": "6.6.4-p38.g6df847a+",
+            "value": "\"6.6.4-p38.g6df847a+\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws6d4d",
+            "text": "2.5a",
+            "value": "\"2.5a\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mkws5wtx",
+            "text": "Intel(R) Xeon(R) Gold 6430",
+            "value": "\"Intel(R) Xeon(R) Gold 6430\"",
+            "type": "text"
+          },
+          {
+            "id": "dropdown_mkty2c6n",
+            "text": "64",
+            "value": "{\"ids\":[2]}",
+            "type": "dropdown"
+          },
+          {
+            "id": "text_mkwsytf5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktye8k5",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty4jgb",
+            "text": "Internal (4CH)",
+            "value": "\"Internal (4CH)\"",
+            "type": "text"
+          },
+          {
+            "id": "text_mktyx0v1",
+            "text": "755L4Y3401025",
+            "value": "\"755L4Y3401025\"",
+            "type": "text"
+          },
+          {
+            "id": "boolean_mktyfqcy",
+            "text": "",
+            "value": "{\"checked\":false}",
+            "type": "checkbox"
+          },
+          {
+            "id": "text_mkty83ft",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mkty5e75",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktyn15x",
+            "text": "",
+            "value": null,
+            "type": "text"
+          },
+          {
+            "id": "text_mktym3sp",
+            "text": "complete",
+            "value": "\"complete\"",
+            "type": "text"
+          },
+          {
+            "id": "color_mkwwthzs",
+            "text": "done",
+            "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-19T12:55:22.323Z\"}",
+            "type": "status"
+          }
+        ]
+      }
+    ]
+  }
+}

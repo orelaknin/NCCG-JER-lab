@@ -1,0 +1,25 @@
+# Python virtual env
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Build
+dist/
+build/
+
+# Temp
+tmp/
+temp/
