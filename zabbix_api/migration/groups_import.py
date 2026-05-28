@@ -2,10 +2,10 @@ from zabbix_api import ZabbixAPI
 import json
 
 # Replace with your Zabbix server URL
-server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
+server_url = "http://nccg-zabbix.jer.intel.com/zabbix/"
 
 # Replace with your Zabbix API credentials
-username = "update"
+username = "Del_Hosts"
 password = "$giga"
 
 # Connect to the Zabbix API
@@ -53,6 +53,6 @@ def import_zabbix_host_groups(zapi, input_file):
         # Logout from the Zabbix API
         zapi.logout()
 
-input_file = fr"C:\Scripts\groups_.json"
+input_file = fr"C:\Scripts\groups_20241112_1113.json"
 
 import_zabbix_host_groups(zapi, input_file)

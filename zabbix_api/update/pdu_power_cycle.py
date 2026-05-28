@@ -3,7 +3,7 @@ from zabbix_api import ZabbixAPI
 
 # Define the Zabbix server URL and login credentials
 server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
-username = "Del_Hosts"
+username = "Reg"
 password = "$giga"
 
 def get_host_id(zapi, hostname):

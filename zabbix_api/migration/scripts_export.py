@@ -3,10 +3,10 @@ from datetime import datetime
 import json
 
 # Replace with your Zabbix server URL
-server_url = "http://ladjzabbixc.jer.intel.com/zabbix/"
+server_url = "http://nccg-zabbix.jer.intel.com/zabbix/"
 
 # Replace with your Zabbix API credentials
-username = "update"
+username = "Del_Hosts"
 password = "$giga"
 
 # Connect to the Zabbix API

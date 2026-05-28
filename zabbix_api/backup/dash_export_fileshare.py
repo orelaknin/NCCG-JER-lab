@@ -178,6 +178,7 @@ def main():
         if data:
             export_to_excel(data, fileshare_base_path)
         zapi.logout()
+        
 
 if __name__ == "__main__":
     main()

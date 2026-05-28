@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 
 # Connect to the Zabbix API
-zapi = ZabbixAPI(server="http://ladjzabbixc.jer.intel.com/zabbix/")
+zapi = ZabbixAPI(server="http://nccg-zabbix.jer.intel.com/zabbix/")
 zapi.login("Del_Hosts", "$giga")
 
 def remove_fields(obj, fields_to_remove):
@@ -34,7 +34,7 @@ def import_zabbix_dashboards(zapi, input_file):
         return
 
     # Fields to remove before importing
-    fields_to_remove = ['dashboardid', 'uuid', 'userid', 'templateid', 'widgetid', 'dashboard_pageid']
+    fields_to_remove = ['dashboardid', 'uuid', 'userid', 'templateid', 'widgetid', 'dashboard_pageid', 'userGroups']
 
     # Import each dashboard
     for dashboard in dashboards:
@@ -67,6 +67,6 @@ def import_zabbix_dashboards(zapi, input_file):
 
 
 
-input_file = fr"C:\Scripts\dash1.json"
+input_file = fr"C:\Scripts\dash2.json"
 
 import_zabbix_dashboards(zapi, input_file)
